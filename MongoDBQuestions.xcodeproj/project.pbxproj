@@ -14,6 +14,7 @@
 		F047DE872AF37CE700842C53 /* MongoDBQuestionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047DE862AF37CE700842C53 /* MongoDBQuestionsTests.swift */; };
 		F047DE912AF37CE700842C53 /* MongoDBQuestionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047DE902AF37CE700842C53 /* MongoDBQuestionsUITests.swift */; };
 		F047DE932AF37CE700842C53 /* MongoDBQuestionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047DE922AF37CE700842C53 /* MongoDBQuestionsUITestsLaunchTests.swift */; };
+		F047DEA22AF37D5400842C53 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047DEA12AF37D5400842C53 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F047DE8C2AF37CE700842C53 /* MongoDBQuestionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MongoDBQuestionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F047DE902AF37CE700842C53 /* MongoDBQuestionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoDBQuestionsUITests.swift; sourceTree = "<group>"; };
 		F047DE922AF37CE700842C53 /* MongoDBQuestionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoDBQuestionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F047DEA12AF37D5400842C53 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				F047DE752AF37CE600842C53 /* MongoDBQuestionsApp.swift */,
 				F047DE772AF37CE600842C53 /* ContentView.swift */,
+				F047DEA12AF37D5400842C53 /* MainView.swift */,
 				F047DE792AF37CE700842C53 /* Assets.xcassets */,
 				F047DE7B2AF37CE700842C53 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F047DE782AF37CE600842C53 /* ContentView.swift in Sources */,
+				F047DEA22AF37D5400842C53 /* MainView.swift in Sources */,
 				F047DE762AF37CE600842C53 /* MongoDBQuestionsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
