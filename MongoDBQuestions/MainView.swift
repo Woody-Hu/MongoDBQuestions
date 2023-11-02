@@ -20,22 +20,31 @@ struct MainView: View {
                 })
                 {
                    Text("Start")
+                       
                 }
-                .padding(20)
+                .padding(10)
+                .border(Color.black, width: 2)
+                .padding(10)
+                
                 Button(action: {
                     print("History button hit")
                 })
                 {
                     Text("History")
                 }
-                .padding(20)
+                .padding(10)
+                .border(Color.black, width: 2)
+                .padding(10)
+                
                 Button(action: {
                     print("about button hit")
                 })
                 {
                     Text("About")
                 }
-                .padding(20)
+                .padding(10)
+                .border(Color.black, width: 2)
+                .padding(10)
                 Button(action: {
                     print("exit button hit")
                     exit(0) // 退出应用程序
@@ -43,7 +52,8 @@ struct MainView: View {
                 {
                     Text("Exit")
                 }
-                .padding(20)
+                .padding(10)
+                .border(Color.black, width: 2)
             }
         }
     }
