@@ -15,6 +15,8 @@
 		F047DE912AF37CE700842C53 /* MongoDBQuestionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047DE902AF37CE700842C53 /* MongoDBQuestionsUITests.swift */; };
 		F047DE932AF37CE700842C53 /* MongoDBQuestionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047DE922AF37CE700842C53 /* MongoDBQuestionsUITestsLaunchTests.swift */; };
 		F047DEA22AF37D5400842C53 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047DEA12AF37D5400842C53 /* MainView.swift */; };
+		F0C646B42AF3869200CF9695 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C646B32AF3869200CF9695 /* Question.swift */; };
+		F0C646B62AF387A500CF9695 /* QuestionOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C646B52AF387A500CF9695 /* QuestionOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		F047DE902AF37CE700842C53 /* MongoDBQuestionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoDBQuestionsUITests.swift; sourceTree = "<group>"; };
 		F047DE922AF37CE700842C53 /* MongoDBQuestionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoDBQuestionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F047DEA12AF37D5400842C53 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F0C646B32AF3869200CF9695 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		F0C646B52AF387A500CF9695 /* QuestionOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				F047DEA12AF37D5400842C53 /* MainView.swift */,
 				F047DE792AF37CE700842C53 /* Assets.xcassets */,
 				F047DE7B2AF37CE700842C53 /* Preview Content */,
+				F0C646B32AF3869200CF9695 /* Question.swift */,
+				F0C646B52AF387A500CF9695 /* QuestionOption.swift */,
 			);
 			path = MongoDBQuestions;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F047DE782AF37CE600842C53 /* ContentView.swift in Sources */,
+				F0C646B62AF387A500CF9695 /* QuestionOption.swift in Sources */,
+				F0C646B42AF3869200CF9695 /* Question.swift in Sources */,
 				F047DEA22AF37D5400842C53 /* MainView.swift in Sources */,
 				F047DE762AF37CE600842C53 /* MongoDBQuestionsApp.swift in Sources */,
 			);
