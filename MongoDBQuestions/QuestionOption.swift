@@ -6,8 +6,15 @@
 //
 
 import Foundation
-struct  QuestionOption
+struct  QuestionOption:Codable
 {
     let optionValue : String
     let optionId: String
+
+    // init method
+    init(optionValue: String, optionId: String)
+    {
+        self.optionValue = optionValue
+        self.optionId = optionId
+    }
 }
