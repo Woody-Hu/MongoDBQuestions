@@ -15,6 +15,7 @@ struct Question : Identifiable, Codable
     let images: [ImageInfo]
     let link: URL
     let extendedDescription: String
+    let parentQuestionId:String
 
     init(id: UUID, questionDescription: String, options: [QuestionOption], correctOptionIds: Set<String>, images: [ImageInfo], link: URL, extendedDescription: String)
     {
@@ -25,6 +26,7 @@ struct Question : Identifiable, Codable
         self.images = images
         self.link = link
         self.extendedDescription = extendedDescription
+        self.parentQuestionId = ""
     }
     
     func isAnswer(_ input:[QuestionOption]) -> Bool
