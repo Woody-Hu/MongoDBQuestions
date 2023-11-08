@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+struct Request:Identifiable
+{
+    let id:UUID
+    let userId: String
+    let createdDateTime : Date
+    init(id: UUID, userId: String, createdDateTime: Date) {
+        self.id = id
+        self.userId = userId
+        self.createdDateTime = createdDateTime
+    }
+    
+    
+}
