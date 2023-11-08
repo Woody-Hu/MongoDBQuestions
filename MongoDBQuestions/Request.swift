@@ -17,6 +17,4 @@ struct Request:Identifiable
         self.userId = userId
         self.createdDateTime = createdDateTime
     }
-    
-    
 }
