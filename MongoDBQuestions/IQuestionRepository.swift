@@ -10,4 +10,6 @@ import Foundation
 protocol IQuestionRepository
 {
     func GetAllQuestions() -> [Question]
+    
+    func GetlQeustionsByCategories (inputCategories:[String]) -> [Question]
 }

@@ -13,9 +13,7 @@ struct RequestRecord:Identifiable
     let requestId:String
     let finishDate:Date
     let score:Int
-    let questionIds: [String]
-    let rightQuestionIds : [String]
-    let failQuestionIds: [String]
+    let questionRecord:[QuestionRecord]
     let totalDuration: Double
     
     init(id: UUID, requestId: String, finishDate:Date) {
@@ -23,9 +21,7 @@ struct RequestRecord:Identifiable
         self.requestId = requestId
         self.finishDate = finishDate
         self.score = 0
-        self.questionIds = []
-        self.rightQuestionIds = []
-        self.failQuestionIds = []
+        self.questionRecord = []
         self.totalDuration = 0.0
     }
 }
