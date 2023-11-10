@@ -23,6 +23,7 @@
 		F0F7F0BF2AF8D216003E0E8C /* QuestionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F7F0BE2AF8D216003E0E8C /* QuestionRecord.swift */; };
 		F0F9C3352AFDFE6C00674082 /* IQuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F9C3342AFDFE6C00674082 /* IQuestionRepository.swift */; };
 		F0F9C3372AFDFFFA00674082 /* IUserInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F9C3362AFDFFFA00674082 /* IUserInfoRepository.swift */; };
+		F0F9C3392AFE029A00674082 /* IRequestRecordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F9C3382AFE029A00674082 /* IRequestRecordRepository.swift */; };
 		F0FE746A2AFB78F600E10E8E /* RequestRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE74692AFB78F600E10E8E /* RequestRecord.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		F0F7F0BE2AF8D216003E0E8C /* QuestionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRecord.swift; sourceTree = "<group>"; };
 		F0F9C3342AFDFE6C00674082 /* IQuestionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQuestionRepository.swift; sourceTree = "<group>"; };
 		F0F9C3362AFDFFFA00674082 /* IUserInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUserInfoRepository.swift; sourceTree = "<group>"; };
+		F0F9C3382AFE029A00674082 /* IRequestRecordRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequestRecordRepository.swift; sourceTree = "<group>"; };
 		F0FE74692AFB78F600E10E8E /* RequestRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 				F0FE74692AFB78F600E10E8E /* RequestRecord.swift */,
 				F0F9C3342AFDFE6C00674082 /* IQuestionRepository.swift */,
 				F0F9C3362AFDFFFA00674082 /* IUserInfoRepository.swift */,
+				F0F9C3382AFE029A00674082 /* IRequestRecordRepository.swift */,
 			);
 			path = MongoDBQuestions;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				F0FE746A2AFB78F600E10E8E /* RequestRecord.swift in Sources */,
 				F0F7F0BF2AF8D216003E0E8C /* QuestionRecord.swift in Sources */,
 				F07DC4132AFA1930006DFD11 /* Request.swift in Sources */,
+				F0F9C3392AFE029A00674082 /* IRequestRecordRepository.swift in Sources */,
 				F047DE762AF37CE600842C53 /* MongoDBQuestionsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
