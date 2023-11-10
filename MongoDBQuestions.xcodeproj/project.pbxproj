@@ -21,6 +21,8 @@
 		F0C646B62AF387A500CF9695 /* QuestionOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C646B52AF387A500CF9695 /* QuestionOption.swift */; };
 		F0F7F0BD2AF8D1CD003E0E8C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F7F0BC2AF8D1CD003E0E8C /* UserInfo.swift */; };
 		F0F7F0BF2AF8D216003E0E8C /* QuestionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F7F0BE2AF8D216003E0E8C /* QuestionRecord.swift */; };
+		F0F9C3352AFDFE6C00674082 /* IQuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F9C3342AFDFE6C00674082 /* IQuestionRepository.swift */; };
+		F0F9C3372AFDFFFA00674082 /* IUserInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F9C3362AFDFFFA00674082 /* IUserInfoRepository.swift */; };
 		F0FE746A2AFB78F600E10E8E /* RequestRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE74692AFB78F600E10E8E /* RequestRecord.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		F0C646B52AF387A500CF9695 /* QuestionOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOption.swift; sourceTree = "<group>"; };
 		F0F7F0BC2AF8D1CD003E0E8C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		F0F7F0BE2AF8D216003E0E8C /* QuestionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRecord.swift; sourceTree = "<group>"; };
+		F0F9C3342AFDFE6C00674082 /* IQuestionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQuestionRepository.swift; sourceTree = "<group>"; };
+		F0F9C3362AFDFFFA00674082 /* IUserInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUserInfoRepository.swift; sourceTree = "<group>"; };
 		F0FE74692AFB78F600E10E8E /* RequestRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +126,8 @@
 				F0F7F0BE2AF8D216003E0E8C /* QuestionRecord.swift */,
 				F07DC4122AFA1930006DFD11 /* Request.swift */,
 				F0FE74692AFB78F600E10E8E /* RequestRecord.swift */,
+				F0F9C3342AFDFE6C00674082 /* IQuestionRepository.swift */,
+				F0F9C3362AFDFFFA00674082 /* IUserInfoRepository.swift */,
 			);
 			path = MongoDBQuestions;
 			sourceTree = "<group>";
@@ -281,9 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F9C3372AFDFFFA00674082 /* IUserInfoRepository.swift in Sources */,
 				F047DE782AF37CE600842C53 /* ContentView.swift in Sources */,
 				F0C646B62AF387A500CF9695 /* QuestionOption.swift in Sources */,
 				F0C646B42AF3869200CF9695 /* Question.swift in Sources */,
+				F0F9C3352AFDFE6C00674082 /* IQuestionRepository.swift in Sources */,
 				F0BB28BC2AF4B63B000732B8 /* ImageInfo.swift in Sources */,
 				F047DEA22AF37D5400842C53 /* MainView.swift in Sources */,
 				F0F7F0BD2AF8D1CD003E0E8C /* UserInfo.swift in Sources */,

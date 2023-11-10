@@ -16,6 +16,7 @@ struct RequestRecord:Identifiable
     let questionIds: [String]
     let rightQuestionIds : [String]
     let failQuestionIds: [String]
+    let totalDuration: Double
     
     init(id: UUID, requestId: String, finishDate:Date) {
         self.id = id
@@ -25,5 +26,6 @@ struct RequestRecord:Identifiable
         self.questionIds = []
         self.rightQuestionIds = []
         self.failQuestionIds = []
+        self.totalDuration = 0.0
     }
 }

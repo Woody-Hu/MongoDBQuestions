@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol IUserInfoRepository
+{
+    func GetOrAddCurrentUserInfo() -> UserInfo
+}
