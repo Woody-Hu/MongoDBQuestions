@@ -11,15 +11,15 @@ struct QuestionRecord:Identifiable
 {
     let id:UUID
     let questionId:String
-    let timeUsage:Double
+    let duration:Double
     let requestId:String
     let selectOptionIds:[String]
     let success:Bool
     
-    init(id: UUID, questionId: String, timeUsage: Double, requestId: String, selectOptionIds:[String], success:Bool) {
+    init(id: UUID, questionId: String, duration: Double, requestId: String, selectOptionIds:[String], success:Bool) {
         self.id = id
         self.questionId = questionId
-        self.timeUsage = timeUsage
+        self.duration = duration
         self.requestId = requestId
         self.selectOptionIds = selectOptionIds
         self.success = success
