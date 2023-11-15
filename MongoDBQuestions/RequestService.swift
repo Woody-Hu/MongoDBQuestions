@@ -11,9 +11,12 @@ class RequestService
 {
     let questionRepository: IQuestionRepository
 
-    init(questionRepository: IQuestionRepository)
+    let requestRecordRepository : IRequestRecordRepository
+
+    init(questionRepository: IQuestionRepository, requestRecordRepository : IRequestRecordRepository)
     {
         self.questionRepository = questionRepository
+        self.requestRecordRepository = requestRecordRepository
     }
 
     func GetRequest(user:UserInfo, count: Int = 20) -> Request
@@ -35,8 +38,12 @@ class RequestService
 
         questions.shuffle()
         let request = Request(id: UUID(), userId: user.id.uuidString, createdDateTime: Date(), questions: questions)
-        
         return request
     }
 
+    func SaveRequestRecord(requestContext:RequestContext)
+    {
+        let requestRecord = requestContext.FinishRequest()
+        let saveRes = requestRecordRepository.SaveRequestRecord(input: requestRecord)
+    }
 }
