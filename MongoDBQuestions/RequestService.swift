@@ -33,6 +33,7 @@ class RequestService
             questions = questionRepository.GetlQeustionsByCategories(inputCategories: inputCategories, count: count)
         }
 
+        questions.shuffle()
         let request = Request(id: UUID(), userId: user.id.uuidString, createdDateTime: Date(), questions: questions)
         
         return request
