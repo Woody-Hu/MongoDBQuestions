@@ -56,9 +56,9 @@ class RequestService
         {
             let user = GetUserInfo()
             let request = GetRequest(user: user, count: usedCount, inputCategories: inputCategories)
-            var currentRequestContext  = RequestContext(userInfo: <#T##UserInfo#>, currentRequest: <#T##Request#>)
-            self.requestContext = currentRequestContext
-            return currentRequestContext
+            let requestContext  = RequestContext(userInfo: <#T##UserInfo#>, currentRequest: <#T##Request#>)
+            self.requestContext = requestContext
+            return requestContext
         }
     }
 
