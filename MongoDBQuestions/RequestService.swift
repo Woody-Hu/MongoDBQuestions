@@ -13,18 +13,62 @@ class RequestService
 
     let requestRecordRepository : IRequestRecordRepository
 
-    init(questionRepository: IQuestionRepository, requestRecordRepository : IRequestRecordRepository)
+    let userRepository : IUserInfoRepository
+
+    var requestContext : RequestContext?
+
+    var user : UserInfo?
+
+    init(questionRepository: IQuestionRepository, requestRecordRepository : IRequestRecordRepository, userRepository : IUserInfoRepository)
     {
         self.questionRepository = questionRepository
         self.requestRecordRepository = requestRecordRepository
+        self.userRepository = userRepository
     }
 
-    func GetRequest(user:UserInfo, count: Int = 20) -> Request
+    private func GetUserInfo() -> UserInfo
     {
-        return GetRequest(user: user, count: count, inputCategories: [])
+        if let user = self.user
+        {
+            return user
+        }
+        else
+        {
+            let user = userRepository.GetOrAddCurrentUserInfo()
+            self.user = user
+            return user
+        }
     }
 
-    func GetRequest(user:UserInfo, count: Int, inputCategories:[String]) -> Request
+    func GetRequestContext(count: Int = 20, inputCategories:[String] = []) -> RequestContext
+    {
+        var usedCount = count
+        if usedCount < 0
+        {
+            usedCount = 20
+        }
+        
+        if let requestContext = self.requestContext
+        {
+            return requestContext
+        }
+        else
+        {
+            let user = GetUserInfo()
+            let request = GetRequest(user: user, count: usedCount, inputCategories: inputCategories)
+            var currentRequestContext  = RequestContext(userInfo: <#T##UserInfo#>, currentRequest: <#T##Request#>)
+            self.requestContext = currentRequestContext
+            return currentRequestContext
+        }
+    }
+
+    func SaveRequestRecord()
+    {
+        let requestContext = GetRequestContext()
+        SaveRequestRecord(requestContext: requestContext)
+    }
+
+    fileprivate func GetRequest(user:UserInfo, count: Int, inputCategories:[String]) -> Request
     {
         var questions: [Question] = []
         if inputCategories.count == 0
@@ -41,7 +85,7 @@ class RequestService
         return request
     }
 
-    func SaveRequestRecord(requestContext:RequestContext)
+    fileprivate func SaveRequestRecord(requestContext:RequestContext)
     {
         let requestRecord = requestContext.FinishRequest()
         let saveRes = requestRecordRepository.SaveRequestRecord(input: requestRecord)
