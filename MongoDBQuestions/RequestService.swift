@@ -26,7 +26,7 @@ class RequestService
         self.userRepository = userRepository
     }
 
-    private func GetUserInfo() -> UserInfo
+    func GetUserInfo() -> UserInfo
     {
         if let user = self.user
         {
@@ -61,11 +61,20 @@ class RequestService
             return requestContext
         }
     }
+    
+    func ClearCurrentRequestContext()
+    {
+        self.requestContext = nil
+    }
 
     func SaveRequestRecord()
     {
         let requestContext = GetRequestContext()
-        SaveRequestRecord(requestContext: requestContext)
+        let savRes = SaveRequestRecord(requestContext: requestContext)
+        if savRes
+        {
+            ClearCurrentRequestContext()
+        }
     }
 
     fileprivate func GetRequest(user:UserInfo, count: Int, inputCategories:[String]) -> Request
@@ -85,9 +94,10 @@ class RequestService
         return request
     }
 
-    fileprivate func SaveRequestRecord(requestContext:RequestContext)
+    fileprivate func SaveRequestRecord(requestContext:RequestContext) -> Bool
     {
         let requestRecord = requestContext.FinishRequest()
         let saveRes = requestRecordRepository.SaveRequestRecord(input: requestRecord)
+        return saveRes
     }
 }
