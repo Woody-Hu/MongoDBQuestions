@@ -62,6 +62,11 @@ class RequestService
         }
     }
     
+    func GetRequestRecords() -> [RequestRecord]
+    {
+        return self.requestRecordRepository.GetAllRequestRecordsSortByFinishDate()
+    }
+    
     func ClearCurrentRequestContext()
     {
         self.requestContext = nil
