@@ -10,5 +10,8 @@ import Foundation
 protocol IRequestRecordRepository
 {
     func SaveRequestRecord(input: RequestRecord) -> Bool
+    
     func GetAllRequestRecordsSortByFinishDate() -> [RequestRecord]
+    
+    func DeleteRequestRecord(input: RequestRecord) -> Bool
 }

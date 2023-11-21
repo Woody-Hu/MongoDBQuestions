@@ -67,6 +67,11 @@ class RequestService
         return self.requestRecordRepository.GetAllRequestRecordsSortByFinishDate()
     }
     
+    func DeleteRequestRecord(input : RequestRecord) -> Bool
+    {
+        return self.requestRecordRepository.DeleteRequestRecord(input: <#T##RequestRecord#>)
+    }
+    
     func ClearCurrentRequestContext()
     {
         self.requestContext = nil
