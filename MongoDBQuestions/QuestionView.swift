@@ -14,20 +14,41 @@ struct QuestionView: View {
     }
     
     var body: some View {
-        Text(question.title).font(.title).padding()
-        Text(question.questionDescription).padding()
-
-
-        HStack {
-            Button(action: {
-                if question.isAnswer(selectedOptions) {
+        VStack{
+            Text(question.title).font(.title).padding()
+            Text(question.questionDescription).padding()
+            ForEach(question.options, id: \.self) { option in
+                Button(action: {
+                    if selectedOptions.contains(option) {
+                        selectedOptions.removeAll(where: { $0 == option })
                     } else {
+                        selectedOptions.append(option)
                     }
-            }){Text("Ok") }.padding()
-            Button(action: {
-                selectedOptions = []
-            }){Text("Cancel")}.padding()
-        }.padding()
+                }){
+                    HStack{
+                        if selectedOptions.contains(option) {
+                            Image(systemName: "checkmark.square")
+                        } else {
+                            Image(systemName: "square")
+                        }
+                        Text(option.optionValue)
+                    }
+                }.padding()
+            }
+            
+            
+            HStack {
+                Button(action: {
+                    if question.isAnswer(selectedOptions) {
+                        } else {
+                        }
+                }){Text("Ok") }.padding()
+                Button(action: {
+                    selectedOptions = []
+                }){Text("Cancel")}.padding()
+            }.padding()
+        }
+
     }
 }
 

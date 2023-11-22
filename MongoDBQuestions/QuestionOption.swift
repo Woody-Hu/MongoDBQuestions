@@ -6,8 +6,9 @@
 //
 
 import Foundation
-struct  QuestionOption:Codable
+struct  QuestionOption : Identifiable, Codable, Hashable
 {
+    let id: UUID
     let optionValue : String
     let optionId: String
     let questionId: String
@@ -16,6 +17,7 @@ struct  QuestionOption:Codable
     // init method
     init(optionValue: String, optionId: String)
     {
+        self.id = UUID()
         self.optionValue = optionValue
         self.optionId = optionId
         self.questionId = ""
