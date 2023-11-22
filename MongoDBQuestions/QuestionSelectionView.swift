@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct QuestionSelectionView: View {
+    var categories: [String]
+    var questionsCount: Int
+    var selectCategory: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+        sliderView{
+            Text("Number of questions: \(questionsCount)")
+        }.padding()
+
+        Picker(selection: $selectCategory, label: Text("Select a category")) {
+            ForEach(categories, id: \.self) {
+                Text($0)
+            }
+        }.padding()
+
+        Button(action: {
+            NavigationLink(destination: QuestionView()) {
+                Text("OK")
+            }
+        }).padding()
     }
 }
 

@@ -9,6 +9,7 @@ import Foundation
 struct Question : Identifiable, Codable
 {
     let id:UUID
+    let title:String
     let questionDescription: String
     let options: [QuestionOption]
     let correctOptionIds: Set<String>
