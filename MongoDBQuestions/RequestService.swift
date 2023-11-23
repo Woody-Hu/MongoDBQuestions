@@ -56,7 +56,7 @@ class RequestService
         {
             let user = GetUserInfo()
             let request = GetRequest(user: user, count: usedCount, inputCategories: inputCategories)
-            let requestContext  = RequestContext(userInfo: <#T##UserInfo#>, currentRequest: <#T##Request#>)
+            let requestContext  = RequestContext(userInfo: user, currentRequest: request)
             self.requestContext = requestContext
             return requestContext
         }
@@ -69,7 +69,7 @@ class RequestService
     
     func DeleteRequestRecord(input : RequestRecord) -> Bool
     {
-        return self.requestRecordRepository.DeleteRequestRecord(input: <#T##RequestRecord#>)
+        return self.requestRecordRepository.DeleteRequestRecord(input: input)
     }
     
     func ClearCurrentRequestContext()

@@ -29,6 +29,7 @@ struct Question : Identifiable, Codable
         self.link = link
         self.extendedDescription = extendedDescription
         self.parentQuestionId = ""
+        self.title = ""
         self.categories = []
     }
     

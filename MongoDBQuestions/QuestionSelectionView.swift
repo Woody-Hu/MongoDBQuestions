@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct QuestionSelectionView: View {
-    var categories: [String]
-    var questionsCount: Int
-    var selectCategory: String
+    var categories: [String] = []
+    @State var questionsCount = 0.0
+    @State var selectCategory: String = ""
     var body: some View {
 
-        sliderView{
+        Slider(value: $questionsCount, in: 10...30, step: 1){
             Text("Number of questions: \(questionsCount)")
         }.padding()
 
@@ -24,10 +24,9 @@ struct QuestionSelectionView: View {
         }.padding()
 
         Button(action: {
-            NavigationLink(destination: QuestionView()) {
-                Text("OK")
+            NavigationLink(destination: QuestionView()){
             }
-        }).padding()
+        }){Text("Ok")}.padding()
     }
 }
 

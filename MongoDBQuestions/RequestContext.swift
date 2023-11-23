@@ -57,7 +57,7 @@ class RequestContext
     {
         var rightAnswerCount = 0 
         rightAnswerCount = self.questionRecords.filter{ $0.success == true }.count
-        var totalCount = self.currentRequest.questions.count
+        let totalCount = self.currentRequest.questions.count
         var score: Int = 0
         if totalCount > 0
         {

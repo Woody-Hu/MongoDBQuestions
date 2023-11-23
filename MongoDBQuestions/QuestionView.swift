@@ -10,8 +10,6 @@ import SwiftUI
 struct QuestionView: View {
     @Binding var question : Question
     @State var selectedOptions: [QuestionOption]
-    init() {
-    }
     
     var body: some View {
         VStack{
