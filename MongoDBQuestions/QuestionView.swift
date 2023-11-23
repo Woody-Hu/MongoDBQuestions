@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct QuestionView: View {
-    @Binding var question : Question
-    @State var selectedOptions: [QuestionOption]
+    @State var question : Question  = Question(id: UUID(), questionDescription: "", options: [], correctOptionIds: [], images: [], link: URL(string: "https://www.mongodb.com")!, extendedDescription: "")
+    @State var selectedOptions: [QuestionOption] = []
     
     var body: some View {
         VStack{
