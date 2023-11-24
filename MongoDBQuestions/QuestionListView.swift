@@ -24,7 +24,7 @@ struct QuestionSelectionView: View {
         }.padding()
 
         Button(action: {
-            NavigationLink(destination: QuestionView()){
+            NavigationLink(destination: QuestionDetailView()){
             }
         }){Text("Ok")}.padding()
     }
