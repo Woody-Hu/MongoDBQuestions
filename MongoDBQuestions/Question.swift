@@ -22,6 +22,7 @@ struct Question : Identifiable, Codable
     init(id: UUID, questionDescription: String, options: [QuestionOption], correctOptionIds: Set<String>, images: [ImageInfo], link: URL, extendedDescription: String)
     {
         self.id = id
+        self.title = ""
         self.questionDescription = questionDescription
         self.options = options
         self.correctOptionIds = correctOptionIds
@@ -29,7 +30,6 @@ struct Question : Identifiable, Codable
         self.link = link
         self.extendedDescription = extendedDescription
         self.parentQuestionId = ""
-        self.title = ""
         self.categories = []
     }
     

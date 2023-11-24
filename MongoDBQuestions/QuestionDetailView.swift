@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct QuestionView: View {
+struct QuestionDetailView: View {
     @State var question : Question  = Question(id: UUID(), questionDescription: "", options: [], correctOptionIds: [], images: [], link: URL(string: "https://www.mongodb.com")!, extendedDescription: "")
     @State var selectedOptions: [QuestionOption] = []
     
@@ -15,26 +15,28 @@ struct QuestionView: View {
         VStack{
             Text(question.title).font(.title).padding()
             Text(question.questionDescription).padding()
-            ForEach(question.options, id: \.self) { option in
-                Button(action: {
-                    if selectedOptions.contains(option) {
-                        selectedOptions.removeAll(where: { $0 == option })
-                    } else {
-                        selectedOptions.append(option)
-                    }
-                }){
-                    HStack{
+            LazyVStack
+            {
+                ForEach(question.options, id: \.self) { option in
+                    Button(action: {
                         if selectedOptions.contains(option) {
-                            Image(systemName: "checkmark.square")
+                            selectedOptions.removeAll(where: { $0 == option })
                         } else {
-                            Image(systemName: "square")
+                            selectedOptions.append(option)
                         }
-                        Text(option.optionValue)
-                    }
-                }.padding()
+                    }){
+                        HStack{
+                            if selectedOptions.contains(option) {
+                                Image(systemName: "checkmark.square")
+                            } else {
+                                Image(systemName: "square")
+                            }
+                            Text(option.optionValue)
+                        }
+                    }.padding()
+                }
+                
             }
-            
-            
             HStack {
                 Button(action: {
                     if question.isAnswer(selectedOptions) {
@@ -51,5 +53,5 @@ struct QuestionView: View {
 }
 
 #Preview {
-    QuestionView()
+    QuestionDetailView()
 }
