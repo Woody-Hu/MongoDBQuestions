@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct SettingView: View {
+struct QuestionSizeSetting: View {
     @State var questionsCount = 10.0
     var body: some View {
         VStack(alignment: .leading){
             Text("question size").font(.title)
-            Text("choose the question count")
+            Text("choose the question count per quize")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
             VStack {
@@ -25,5 +25,5 @@ struct SettingView: View {
 }
 
 #Preview {
-    SettingView()
+    QuestionSizeSetting()
 }

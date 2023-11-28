@@ -6,3 +6,10 @@
 //
 
 import Foundation
+struct SettingInfo
+{
+    let questionSize:Int
+    init(questionSize: Int) {
+        self.questionSize = questionSize
+    }
+}
