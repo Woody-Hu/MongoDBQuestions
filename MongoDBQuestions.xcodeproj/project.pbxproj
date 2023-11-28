@@ -20,6 +20,8 @@
 		F047DEA22AF37D5400842C53 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047DEA12AF37D5400842C53 /* MainView.swift */; };
 		F0602B932B15B8290037690D /* QuestionSizeSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0602B922B15B8290037690D /* QuestionSizeSetting.swift */; };
 		F0602B952B15B8420037690D /* SettingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0602B942B15B8420037690D /* SettingInfo.swift */; };
+		F0602B972B15D0640037690D /* QuestionCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0602B962B15D0640037690D /* QuestionCategoryRow.swift */; };
+		F0602B992B15D1770037690D /* CategoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0602B982B15D1770037690D /* CategoryInfo.swift */; };
 		F070F71D2B048E7D003E5017 /* RequestContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070F71C2B048E7D003E5017 /* RequestContext.swift */; };
 		F07DC4132AFA1930006DFD11 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07DC4122AFA1930006DFD11 /* Request.swift */; };
 		F0BB28BC2AF4B63B000732B8 /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BB28BB2AF4B63B000732B8 /* ImageInfo.swift */; };
@@ -67,6 +69,8 @@
 		F047DEA12AF37D5400842C53 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F0602B922B15B8290037690D /* QuestionSizeSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSizeSetting.swift; sourceTree = "<group>"; };
 		F0602B942B15B8420037690D /* SettingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingInfo.swift; sourceTree = "<group>"; };
+		F0602B962B15D0640037690D /* QuestionCategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCategoryRow.swift; sourceTree = "<group>"; };
+		F0602B982B15D1770037690D /* CategoryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInfo.swift; sourceTree = "<group>"; };
 		F070F71C2B048E7D003E5017 /* RequestContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestContext.swift; sourceTree = "<group>"; };
 		F07DC4122AFA1930006DFD11 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		F0BB28BB2AF4B63B000732B8 /* ImageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 		F047DE692AF37CE600842C53 = {
 			isa = PBXGroup;
 			children = (
+				F0602B982B15D1770037690D /* CategoryInfo.swift */,
 				F047DE742AF37CE600842C53 /* MongoDBQuestions */,
 				F047DE852AF37CE700842C53 /* MongoDBQuestionsTests */,
 				F047DE8F2AF37CE700842C53 /* MongoDBQuestionsUITests */,
@@ -149,6 +154,7 @@
 				F004179A2B0DCDB0003196CC /* QuestionDetailView.swift */,
 				F0602B922B15B8290037690D /* QuestionSizeSetting.swift */,
 				F0602B942B15B8420037690D /* SettingInfo.swift */,
+				F0602B962B15D0640037690D /* QuestionCategoryRow.swift */,
 			);
 			path = MongoDBQuestions;
 			sourceTree = "<group>";
@@ -310,8 +316,10 @@
 			files = (
 				F0602B952B15B8420037690D /* SettingInfo.swift in Sources */,
 				F0F9C3372AFDFFFA00674082 /* IUserInfoRepository.swift in Sources */,
+				F0602B972B15D0640037690D /* QuestionCategoryRow.swift in Sources */,
 				F047DE782AF37CE600842C53 /* ContentView.swift in Sources */,
 				F0C646B62AF387A500CF9695 /* QuestionOption.swift in Sources */,
+				F0602B992B15D1770037690D /* CategoryInfo.swift in Sources */,
 				F0602B932B15B8290037690D /* QuestionSizeSetting.swift in Sources */,
 				F0C646B42AF3869200CF9695 /* Question.swift in Sources */,
 				F0F9C3352AFDFE6C00674082 /* IQuestionRepository.swift in Sources */,
