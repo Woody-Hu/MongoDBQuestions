@@ -112,7 +112,6 @@
 		F047DE692AF37CE600842C53 = {
 			isa = PBXGroup;
 			children = (
-				F0602B982B15D1770037690D /* CategoryInfo.swift */,
 				F047DE742AF37CE600842C53 /* MongoDBQuestions */,
 				F047DE852AF37CE700842C53 /* MongoDBQuestionsTests */,
 				F047DE8F2AF37CE700842C53 /* MongoDBQuestionsUITests */,
@@ -133,6 +132,7 @@
 		F047DE742AF37CE600842C53 /* MongoDBQuestions */ = {
 			isa = PBXGroup;
 			children = (
+				F0602B982B15D1770037690D /* CategoryInfo.swift */,
 				F0BB28BB2AF4B63B000732B8 /* ImageInfo.swift */,
 				F047DE752AF37CE600842C53 /* MongoDBQuestionsApp.swift */,
 				F047DE772AF37CE600842C53 /* ContentView.swift */,
