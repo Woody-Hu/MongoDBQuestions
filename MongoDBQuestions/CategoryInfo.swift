@@ -9,12 +9,12 @@ import Foundation
 
 struct CategoryInfo{
     let name:String
-    let Description:String
+    let description:String
     let imageName:String
     
-    init(name: String, Description: String, imageName: String) {
+    init(name: String, description: String, imageName: String) {
         self.name = name
-        self.Description = Description
+        self.description = description
         self.imageName = imageName
     }
 }
