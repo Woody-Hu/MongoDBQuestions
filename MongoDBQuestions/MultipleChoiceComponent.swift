@@ -11,7 +11,7 @@ struct MultipleChoiceComponent: View {
     var choices:[String]
     @State var selectedOptions: [String] = []
     var body: some View {
-        VStack
+        VStack(alignment:.leading)
         {
             ForEach(choices, id: \.self) { option in
                 Button(action: {
@@ -32,7 +32,7 @@ struct MultipleChoiceComponent: View {
                     }
                 }.padding()
             }
-        }
+        }.frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 
