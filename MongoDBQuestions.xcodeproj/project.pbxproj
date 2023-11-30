@@ -24,7 +24,8 @@
 		F0602B992B15D1770037690D /* CategoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0602B982B15D1770037690D /* CategoryInfo.swift */; };
 		F070F71D2B048E7D003E5017 /* RequestContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070F71C2B048E7D003E5017 /* RequestContext.swift */; };
 		F07DC4132AFA1930006DFD11 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07DC4122AFA1930006DFD11 /* Request.swift */; };
-		F0A2C6B32B173B590010AB52 /* QuestionDescriptionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2C6B22B173B590010AB52 /* QuestionDescriptionComponent.swift */; };
+		F0A2C6B32B173B590010AB52 /* DescriptionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2C6B22B173B590010AB52 /* DescriptionComponent.swift */; };
+		F0A2C6B52B1872E80010AB52 /* MultipleChoiceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2C6B42B1872E80010AB52 /* MultipleChoiceComponent.swift */; };
 		F0BB28BC2AF4B63B000732B8 /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BB28BB2AF4B63B000732B8 /* ImageInfo.swift */; };
 		F0C646B42AF3869200CF9695 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C646B32AF3869200CF9695 /* Question.swift */; };
 		F0C646B62AF387A500CF9695 /* QuestionOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C646B52AF387A500CF9695 /* QuestionOption.swift */; };
@@ -74,7 +75,8 @@
 		F0602B982B15D1770037690D /* CategoryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInfo.swift; sourceTree = "<group>"; };
 		F070F71C2B048E7D003E5017 /* RequestContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestContext.swift; sourceTree = "<group>"; };
 		F07DC4122AFA1930006DFD11 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		F0A2C6B22B173B590010AB52 /* QuestionDescriptionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDescriptionComponent.swift; sourceTree = "<group>"; };
+		F0A2C6B22B173B590010AB52 /* DescriptionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionComponent.swift; sourceTree = "<group>"; };
+		F0A2C6B42B1872E80010AB52 /* MultipleChoiceComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceComponent.swift; sourceTree = "<group>"; };
 		F0BB28BB2AF4B63B000732B8 /* ImageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
 		F0C646B32AF3869200CF9695 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F0C646B52AF387A500CF9695 /* QuestionOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOption.swift; sourceTree = "<group>"; };
@@ -157,7 +159,8 @@
 				F0602B922B15B8290037690D /* QuestionSizeSetting.swift */,
 				F0602B942B15B8420037690D /* SettingInfo.swift */,
 				F0602B962B15D0640037690D /* QuestionCategoryRow.swift */,
-				F0A2C6B22B173B590010AB52 /* QuestionDescriptionComponent.swift */,
+				F0A2C6B22B173B590010AB52 /* DescriptionComponent.swift */,
+				F0A2C6B42B1872E80010AB52 /* MultipleChoiceComponent.swift */,
 			);
 			path = MongoDBQuestions;
 			sourceTree = "<group>";
@@ -331,9 +334,10 @@
 				F016AA622B034E5B00796760 /* RequestService.swift in Sources */,
 				F070F71D2B048E7D003E5017 /* RequestContext.swift in Sources */,
 				F004179B2B0DCDB0003196CC /* QuestionDetailView.swift in Sources */,
-				F0A2C6B32B173B590010AB52 /* QuestionDescriptionComponent.swift in Sources */,
+				F0A2C6B32B173B590010AB52 /* DescriptionComponent.swift in Sources */,
 				F0F7F0BD2AF8D1CD003E0E8C /* UserInfo.swift in Sources */,
 				F0FE746A2AFB78F600E10E8E /* RequestRecord.swift in Sources */,
+				F0A2C6B52B1872E80010AB52 /* MultipleChoiceComponent.swift in Sources */,
 				F0F7F0BF2AF8D216003E0E8C /* QuestionRecord.swift in Sources */,
 				F07DC4132AFA1930006DFD11 /* Request.swift in Sources */,
 				F0F9C3392AFE029A00674082 /* IRequestRecordRepository.swift in Sources */,

@@ -7,18 +7,19 @@
 
 import SwiftUI
 
-struct QuestionDescriptionComponent: View {
+struct DescriptionComponent: View {
     let description:String
+    let fontSize = 20.0
     var body: some View {
         ScrollView
         {
             VStack(alignment:.leading) {
-                Text(description).font(.system(size: 30))
+                Text(description).font(.system(size: fontSize))
             }.frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 }
 
 #Preview {
-    QuestionDescriptionComponent(description: "Amongst which of the following is / are true about MongoDB?")
+    DescriptionComponent(description: "Amongst which of the following is / are true about MongoDB?")
 }
