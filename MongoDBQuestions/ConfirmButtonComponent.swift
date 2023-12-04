@@ -9,7 +9,25 @@ import SwiftUI
 
 struct ConfirmButtonComponent: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: {
+            print("Button tapped")
+        }){
+            ZStack {
+                Circle()
+                    .frame(width: 100, height: 100)
+                    .overlay(
+                        LinearGradient(gradient: Gradient(colors: [Color.blue, Color.green]), startPoint: .top, endPoint: .bottom)
+                            .frame(height: 100)
+                    )
+                    .clipShape(Circle())
+                
+                Text("Go")
+                    .foregroundColor(.white)
+                    .font(.title)
+                    .italic()
+                    .multilineTextAlignment(.center)
+            }
+        }
     }
 }
 
