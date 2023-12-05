@@ -13,15 +13,16 @@ struct QuestionDetailView: View {
     
     var body: some View {
         VStack{
+            TitleComponent()
+            
+            
+            Divider().frame(height:2).background(Color.gray)
+            
             DescriptionComponent(description: "Amongst which of the following is / are true about MongoDB?").padding()
             
-            Text("")
-            Divider().background(Color.black)
-            Text("")
+            Divider().frame(height:2).background(Color.gray)
             
-            MultipleChoiceComponent(choices: ["option 1", "option 2", "option 3"]).padding()
-            
-            
+            MultipleChoiceComponent(choices: ["option 1", "option 2", "option 3"])
             
             ConfirmButtonComponent()
             

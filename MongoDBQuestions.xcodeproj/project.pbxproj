@@ -25,6 +25,7 @@
 		F070F71D2B048E7D003E5017 /* RequestContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070F71C2B048E7D003E5017 /* RequestContext.swift */; };
 		F07DC4132AFA1930006DFD11 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07DC4122AFA1930006DFD11 /* Request.swift */; };
 		F081DD672B1DB3780025ECC2 /* ConfirmButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081DD662B1DB3780025ECC2 /* ConfirmButtonComponent.swift */; };
+		F081DD692B1F0BCF0025ECC2 /* TitleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081DD682B1F0BCF0025ECC2 /* TitleComponent.swift */; };
 		F0A2C6B32B173B590010AB52 /* DescriptionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2C6B22B173B590010AB52 /* DescriptionComponent.swift */; };
 		F0A2C6B52B1872E80010AB52 /* MultipleChoiceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2C6B42B1872E80010AB52 /* MultipleChoiceComponent.swift */; };
 		F0BB28BC2AF4B63B000732B8 /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BB28BB2AF4B63B000732B8 /* ImageInfo.swift */; };
@@ -77,6 +78,7 @@
 		F070F71C2B048E7D003E5017 /* RequestContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestContext.swift; sourceTree = "<group>"; };
 		F07DC4122AFA1930006DFD11 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		F081DD662B1DB3780025ECC2 /* ConfirmButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButtonComponent.swift; sourceTree = "<group>"; };
+		F081DD682B1F0BCF0025ECC2 /* TitleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleComponent.swift; sourceTree = "<group>"; };
 		F0A2C6B22B173B590010AB52 /* DescriptionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionComponent.swift; sourceTree = "<group>"; };
 		F0A2C6B42B1872E80010AB52 /* MultipleChoiceComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceComponent.swift; sourceTree = "<group>"; };
 		F0BB28BB2AF4B63B000732B8 /* ImageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				F0A2C6B22B173B590010AB52 /* DescriptionComponent.swift */,
 				F0A2C6B42B1872E80010AB52 /* MultipleChoiceComponent.swift */,
 				F081DD662B1DB3780025ECC2 /* ConfirmButtonComponent.swift */,
+				F081DD682B1F0BCF0025ECC2 /* TitleComponent.swift */,
 			);
 			path = MongoDBQuestions;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0602B952B15B8420037690D /* SettingInfo.swift in Sources */,
+				F081DD692B1F0BCF0025ECC2 /* TitleComponent.swift in Sources */,
 				F0F9C3372AFDFFFA00674082 /* IUserInfoRepository.swift in Sources */,
 				F0602B972B15D0640037690D /* QuestionCategoryRow.swift in Sources */,
 				F047DE782AF37CE600842C53 /* ContentView.swift in Sources */,
