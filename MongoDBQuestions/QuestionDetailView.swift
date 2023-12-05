@@ -14,8 +14,7 @@ struct QuestionDetailView: View {
     var body: some View {
         VStack{
             TitleComponent()
-            
-            
+        
             Divider().frame(height:2).background(Color.gray)
             
             DescriptionComponent(description: "Amongst which of the following is / are true about MongoDB?").padding()
@@ -27,7 +26,6 @@ struct QuestionDetailView: View {
             ConfirmButtonComponent()
             
         }
-
     }
 }
 

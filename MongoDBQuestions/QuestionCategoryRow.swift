@@ -16,8 +16,8 @@ struct QuestionCategoryRow: View {
                 Spacer()
                 Image(systemName: "book").font(.largeTitle)
             }
-            Text("")
-            Divider()
+
+            Divider().frame(height:1).background(Color.gray)
             Text(categoryInfo.description).font(.subheadline)
         }
 
