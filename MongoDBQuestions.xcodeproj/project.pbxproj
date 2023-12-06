@@ -30,6 +30,9 @@
 		F0BB28BC2AF4B63B000732B8 /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BB28BB2AF4B63B000732B8 /* ImageInfo.swift */; };
 		F0C646B42AF3869200CF9695 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C646B32AF3869200CF9695 /* Question.swift */; };
 		F0C646B62AF387A500CF9695 /* QuestionOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C646B52AF387A500CF9695 /* QuestionOption.swift */; };
+		F0F794FC2B2061C300028608 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F794FB2B2061C300028608 /* SettingView.swift */; };
+		F0F794FE2B2061D600028608 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F794FD2B2061D600028608 /* HistoryView.swift */; };
+		F0F795002B20635B00028608 /* HistoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F794FF2B20635B00028608 /* HistoryInfo.swift */; };
 		F0F7F0BD2AF8D1CD003E0E8C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F7F0BC2AF8D1CD003E0E8C /* UserInfo.swift */; };
 		F0F7F0BF2AF8D216003E0E8C /* QuestionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F7F0BE2AF8D216003E0E8C /* QuestionRecord.swift */; };
 		F0F9C3352AFDFE6C00674082 /* IQuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F9C3342AFDFE6C00674082 /* IQuestionRepository.swift */; };
@@ -82,6 +85,9 @@
 		F0BB28BB2AF4B63B000732B8 /* ImageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
 		F0C646B32AF3869200CF9695 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F0C646B52AF387A500CF9695 /* QuestionOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOption.swift; sourceTree = "<group>"; };
+		F0F794FB2B2061C300028608 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		F0F794FD2B2061D600028608 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		F0F794FF2B20635B00028608 /* HistoryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInfo.swift; sourceTree = "<group>"; };
 		F0F7F0BC2AF8D1CD003E0E8C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		F0F7F0BE2AF8D216003E0E8C /* QuestionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRecord.swift; sourceTree = "<group>"; };
 		F0F9C3342AFDFE6C00674082 /* IQuestionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQuestionRepository.swift; sourceTree = "<group>"; };
@@ -164,6 +170,9 @@
 				F0A2C6B42B1872E80010AB52 /* MultipleChoiceComponent.swift */,
 				F081DD662B1DB3780025ECC2 /* ConfirmButtonComponent.swift */,
 				F081DD682B1F0BCF0025ECC2 /* TitleComponent.swift */,
+				F0F794FB2B2061C300028608 /* SettingView.swift */,
+				F0F794FD2B2061D600028608 /* HistoryView.swift */,
+				F0F794FF2B20635B00028608 /* HistoryInfo.swift */,
 			);
 			path = MongoDBQuestions;
 			sourceTree = "<group>";
@@ -323,12 +332,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F795002B20635B00028608 /* HistoryInfo.swift in Sources */,
 				F0602B952B15B8420037690D /* SettingInfo.swift in Sources */,
 				F081DD692B1F0BCF0025ECC2 /* TitleComponent.swift in Sources */,
 				F0F9C3372AFDFFFA00674082 /* IUserInfoRepository.swift in Sources */,
 				F0602B972B15D0640037690D /* QuestionCategoryRow.swift in Sources */,
 				F047DE782AF37CE600842C53 /* ContentView.swift in Sources */,
 				F081DD672B1DB3780025ECC2 /* ConfirmButtonComponent.swift in Sources */,
+				F0F794FC2B2061C300028608 /* SettingView.swift in Sources */,
 				F0C646B62AF387A500CF9695 /* QuestionOption.swift in Sources */,
 				F0602B992B15D1770037690D /* CategoryInfo.swift in Sources */,
 				F0602B932B15B8290037690D /* QuestionSizeSetting.swift in Sources */,
@@ -339,6 +350,7 @@
 				F070F71D2B048E7D003E5017 /* RequestContext.swift in Sources */,
 				F004179B2B0DCDB0003196CC /* QuestionDetailView.swift in Sources */,
 				F0A2C6B32B173B590010AB52 /* DescriptionComponent.swift in Sources */,
+				F0F794FE2B2061D600028608 /* HistoryView.swift in Sources */,
 				F0F7F0BD2AF8D1CD003E0E8C /* UserInfo.swift in Sources */,
 				F0FE746A2AFB78F600E10E8E /* RequestRecord.swift in Sources */,
 				F0A2C6B52B1872E80010AB52 /* MultipleChoiceComponent.swift in Sources */,
