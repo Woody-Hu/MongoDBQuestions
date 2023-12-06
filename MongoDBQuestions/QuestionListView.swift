@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct QuestionListView: View {
-    var categories: [String] = ["test1", "test2", "test3"]
+    var categories: [CategoryInfo] = [
+        CategoryInfo(name: "test1", description: "description for test1", imageName: ""),
+        CategoryInfo(name: "test2", description: "description for test2", imageName: ""),
+        CategoryInfo(name: "test3", description: "description for test3", imageName: "")
+    ]
     var body: some View {
         NavigationStack{
-            ForEach(categories, id: \.self){ category in
+            List(categories, id: \.name){ category in
                 NavigationLink(destination: QuestionDetailView()){
-                    Text(category)
-                }.padding()
+                    QuestionCategoryRow(categoryInfo: category)
+                }
             }
         }
     }
