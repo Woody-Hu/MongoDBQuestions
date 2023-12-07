@@ -8,14 +8,14 @@
 import Foundation
 struct HistoryInfo
 {
-    let requestRecordI:String
+    let requestRecordId:String
     let requestDate:Date
     let requestCategory:String
     let score:Int
     let historyName:String
     
-    init(requestRecordI: String, requestDate: Date, requestCategory: String, score: Int) {
-        self.requestRecordI = requestRecordI
+    init(requestRecordId: String, requestDate: Date, requestCategory: String, score: Int) {
+        self.requestRecordId = requestRecordId
         self.requestDate = requestDate
         self.requestCategory = requestCategory
         self.score = score
