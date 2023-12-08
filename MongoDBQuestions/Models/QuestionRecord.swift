@@ -15,6 +15,8 @@ struct QuestionRecord:Identifiable
     let requestId:String
     let selectOptionIds:[String]
     let success:Bool
+    let name:String
+    let order:Int
     
     init(id: UUID, questionId: String, duration: Double, requestId: String, selectOptionIds:[String], success:Bool) {
         self.id = id
@@ -23,5 +25,7 @@ struct QuestionRecord:Identifiable
         self.requestId = requestId
         self.selectOptionIds = selectOptionIds
         self.success = success
+        self.order = 0
+        self.name = "test"
     }
 }

@@ -10,6 +10,7 @@
 		F00417992B0DCAAC003196CC /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00417982B0DCAAC003196CC /* QuestionListView.swift */; };
 		F004179B2B0DCDB0003196CC /* QuestionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F004179A2B0DCDB0003196CC /* QuestionDetailView.swift */; };
 		F016AA622B034E5B00796760 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F016AA612B034E5B00796760 /* RequestService.swift */; };
+		F020BFE92B22CB410003C421 /* QuestionRecordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F020BFE82B22CB410003C421 /* QuestionRecordRow.swift */; };
 		F047DE762AF37CE600842C53 /* MongoDBQuestionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047DE752AF37CE600842C53 /* MongoDBQuestionsApp.swift */; };
 		F047DE782AF37CE600842C53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047DE772AF37CE600842C53 /* ContentView.swift */; };
 		F047DE7A2AF37CE700842C53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F047DE792AF37CE700842C53 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		F00417982B0DCAAC003196CC /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
 		F004179A2B0DCDB0003196CC /* QuestionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailView.swift; sourceTree = "<group>"; };
 		F016AA612B034E5B00796760 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		F020BFE82B22CB410003C421 /* QuestionRecordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRecordRow.swift; sourceTree = "<group>"; };
 		F047DE722AF37CE600842C53 /* MongoDBQuestions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MongoDBQuestions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F047DE752AF37CE600842C53 /* MongoDBQuestionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoDBQuestionsApp.swift; sourceTree = "<group>"; };
 		F047DE772AF37CE600842C53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				F081DD662B1DB3780025ECC2 /* ConfirmButtonComponent.swift */,
 				F081DD682B1F0BCF0025ECC2 /* TitleComponent.swift */,
 				F07A828B2B21A4960029A707 /* HistoryRow.swift */,
+				F020BFE82B22CB410003C421 /* QuestionRecordRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				F0F794FE2B2061D600028608 /* HistoryView.swift in Sources */,
 				F0F7F0BD2AF8D1CD003E0E8C /* UserInfo.swift in Sources */,
 				F0FE746A2AFB78F600E10E8E /* RequestRecord.swift in Sources */,
+				F020BFE92B22CB410003C421 /* QuestionRecordRow.swift in Sources */,
 				F0A2C6B52B1872E80010AB52 /* MultipleChoiceComponent.swift in Sources */,
 				F0F7F0BF2AF8D216003E0E8C /* QuestionRecord.swift in Sources */,
 				F07DC4132AFA1930006DFD11 /* Request.swift in Sources */,
