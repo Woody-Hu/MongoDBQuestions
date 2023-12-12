@@ -18,7 +18,7 @@
 		F047DE872AF37CE700842C53 /* MongoDBQuestionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047DE862AF37CE700842C53 /* MongoDBQuestionsTests.swift */; };
 		F047DE912AF37CE700842C53 /* MongoDBQuestionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047DE902AF37CE700842C53 /* MongoDBQuestionsUITests.swift */; };
 		F047DE932AF37CE700842C53 /* MongoDBQuestionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047DE922AF37CE700842C53 /* MongoDBQuestionsUITestsLaunchTests.swift */; };
-		F050CD902B283501008F92FE /* SelectOptionInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F050CD8F2B283501008F92FE /* SelectOptionInfoRow.swift */; };
+		F050CD922B285FE2008F92FE /* MultipleSelectOptionInfoComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F050CD912B285FE2008F92FE /* MultipleSelectOptionInfoComponent.swift */; };
 		F0602B932B15B8290037690D /* QuestionSizeSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0602B922B15B8290037690D /* QuestionSizeSetting.swift */; };
 		F0602B952B15B8420037690D /* SettingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0602B942B15B8420037690D /* SettingInfo.swift */; };
 		F0602B972B15D0640037690D /* QuestionCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0602B962B15D0640037690D /* QuestionCategoryRow.swift */; };
@@ -78,7 +78,7 @@
 		F047DE8C2AF37CE700842C53 /* MongoDBQuestionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MongoDBQuestionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F047DE902AF37CE700842C53 /* MongoDBQuestionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoDBQuestionsUITests.swift; sourceTree = "<group>"; };
 		F047DE922AF37CE700842C53 /* MongoDBQuestionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoDBQuestionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F050CD8F2B283501008F92FE /* SelectOptionInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOptionInfoRow.swift; sourceTree = "<group>"; };
+		F050CD912B285FE2008F92FE /* MultipleSelectOptionInfoComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectOptionInfoComponent.swift; sourceTree = "<group>"; };
 		F0602B922B15B8290037690D /* QuestionSizeSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSizeSetting.swift; sourceTree = "<group>"; };
 		F0602B942B15B8420037690D /* SettingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingInfo.swift; sourceTree = "<group>"; };
 		F0602B962B15D0640037690D /* QuestionCategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCategoryRow.swift; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 				F081DD682B1F0BCF0025ECC2 /* TitleComponent.swift */,
 				F07A828B2B21A4960029A707 /* HistoryRow.swift */,
 				F020BFE82B22CB410003C421 /* QuestionRecordRow.swift */,
-				F050CD8F2B283501008F92FE /* SelectOptionInfoRow.swift */,
+				F050CD912B285FE2008F92FE /* MultipleSelectOptionInfoComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -388,7 +388,7 @@
 				F0F9C3352AFDFE6C00674082 /* IQuestionRepository.swift in Sources */,
 				F0B5D24F2B26E0BF0049A075 /* SelectOptionInfo.swift in Sources */,
 				F0BB28BC2AF4B63B000732B8 /* ImageInfo.swift in Sources */,
-				F050CD902B283501008F92FE /* SelectOptionInfoRow.swift in Sources */,
+				F050CD922B285FE2008F92FE /* MultipleSelectOptionInfoComponent.swift in Sources */,
 				F016AA622B034E5B00796760 /* RequestService.swift in Sources */,
 				F070F71D2B048E7D003E5017 /* RequestContext.swift in Sources */,
 				F004179B2B0DCDB0003196CC /* QuestionDetailView.swift in Sources */,
