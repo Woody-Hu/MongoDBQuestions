@@ -19,8 +19,7 @@ struct RequestHistoryView: View {
                     QuestionHistoryComponent(questionHistoryInfo: questionHistoryInfo)
                     
                     Divider()
-
-                }.frame(height: UIScreen.main.bounds.height)
+                }
 
             }
             
