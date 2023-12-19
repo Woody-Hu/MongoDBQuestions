@@ -9,13 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView
+        {
+            QuestionListView().tabItem { Label("Quize", systemImage: "house")}
+            
+            HistoryView(requestHisotryInfos: [RequestHistoryInfo(requestRecordId: "1", requestDate: Date(), requestCategory:"test", score: 100, questionHistoryInfos: [QuestionHistoryInfo ( currentIndex: 2, total: 15, questionDescrption: "Amongst which of the following is / are true about MongoDB?", selectHistory: [SelectHistoryInfo(optionId: "1", optionValue: "test value", questionId: "1", selectState: .selectRight),SelectHistoryInfo(optionId: "2", optionValue: "test value 2", questionId: "2", selectState: .selectFail), SelectHistoryInfo(optionId: "4", optionValue: "test value 4", questionId: "1", selectState: .unselectFail), SelectHistoryInfo(optionId: "3", optionValue: "test value 3", questionId: "1", selectState: .normal) ])])]).tabItem { Label("History", systemImage: "magnifyingglass") }
+            
+            SettingView().tabItem {Label("Settings", systemImage: "gearshape") }
+            
         }
-        .padding()
     }
 }
 

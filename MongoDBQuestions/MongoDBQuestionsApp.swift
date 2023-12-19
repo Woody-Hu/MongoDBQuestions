@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 struct MongoDBQuestionsApp: App {
     var body: some Scene {
         WindowGroup {
-            QuestionDetailView()
+            ContentView()
         }
     }
 }
