@@ -12,12 +12,12 @@ struct QuestionHistoryInfo
     let currentIndex:Int
     let total:Int
     let questionDescrption:String
-    let selectOptionInfos:[SelectOptionInfo]
+    let selectHistory:[SelectHistoryInfo]
     
-    init(currentIndex: Int, total: Int, questionDescrption: String, selectOptionInfos: [SelectOptionInfo]) {
+    init(currentIndex: Int, total: Int, questionDescrption: String, selectHistory: [SelectHistoryInfo]) {
         self.currentIndex = currentIndex
         self.total = total
         self.questionDescrption = questionDescrption
-        self.selectOptionInfos = selectOptionInfos
+        self.selectHistory = selectHistory
     }
 }

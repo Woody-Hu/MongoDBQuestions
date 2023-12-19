@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct HistoryInfo
+struct RequestHistoryInfo
 {
     let requestRecordId:String
     let requestDate:Date

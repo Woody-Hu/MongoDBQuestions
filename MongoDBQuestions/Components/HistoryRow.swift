@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HistoryRow: View {
-    let historyInfo: HistoryInfo
+    let historyInfo: RequestHistoryInfo
     var body: some View {
         VStack(alignment: .leading){
             HStack{
@@ -23,5 +23,5 @@ struct HistoryRow: View {
 }
 
 #Preview {
-    HistoryRow(historyInfo: HistoryInfo(requestRecordId: "123", requestDate: Date(), requestCategory: "test", score: 100, questionHistoryInfos: []))
+    HistoryRow(historyInfo: RequestHistoryInfo(requestRecordId: "123", requestDate: Date(), requestCategory: "test", score: 100, questionHistoryInfos: []))
 }

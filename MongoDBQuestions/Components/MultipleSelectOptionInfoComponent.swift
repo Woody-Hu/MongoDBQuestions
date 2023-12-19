@@ -8,24 +8,24 @@
 import SwiftUI
 
 struct MultipleSelectOptionInfoComponent: View {
-    let selectOptions:[SelectOptionInfo]
+    let selectHisotry:[SelectHistoryInfo]
     var body: some View {
         VStack(alignment:.leading)
         {
-            ForEach(selectOptions, id: \.optionId) { selectOptionInfo in
+            ForEach(selectHisotry, id: \.optionId) { select in
                 HStack
                 {
-                    if selectOptionInfo.selectState == SelectState.selectRight || selectOptionInfo.selectState == SelectState.selectFail
+                    if select.selectState == SelectState.selectRight || select.selectState == SelectState.selectFail
                         { Image(systemName:"checkmark.square")}
                     else
                         { Image(systemName: "square") }
-                    Text(selectOptionInfo.optionValue)
-                }.foregroundColor(selectOptionInfo.selectState.color)
+                    Text(select.optionValue)
+                }.foregroundColor(select.selectState.color)
             }.padding()
         }.frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 
 #Preview {
-    MultipleSelectOptionInfoComponent(selectOptions: [SelectOptionInfo(optionId: "1", optionValue: "test value", questionId: "1", selectState: .selectRight),SelectOptionInfo(optionId: "2", optionValue: "test value 2", questionId: "2", selectState: .selectFail), SelectOptionInfo(optionId: "4", optionValue: "test value 4", questionId: "1", selectState: .unselectFail), SelectOptionInfo(optionId: "3", optionValue: "test value 3", questionId: "1", selectState: .normal) ])
+    MultipleSelectOptionInfoComponent(selectHisotry: [SelectHistoryInfo(optionId: "1", optionValue: "test value", questionId: "1", selectState: .selectRight),SelectHistoryInfo(optionId: "2", optionValue: "test value 2", questionId: "2", selectState: .selectFail), SelectHistoryInfo(optionId: "4", optionValue: "test value 4", questionId: "1", selectState: .unselectFail), SelectHistoryInfo(optionId: "3", optionValue: "test value 3", questionId: "1", selectState: .normal) ])
 }

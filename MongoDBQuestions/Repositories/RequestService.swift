@@ -11,18 +11,15 @@ class RequestService
 {
     let questionRepository: IQuestionRepository
 
-    let requestRecordRepository : IRequestRecordRepository
-
     let userRepository : IUserInfoRepository
 
     var requestContext : RequestContext?
 
     var user : UserInfo?
 
-    init(questionRepository: IQuestionRepository, requestRecordRepository : IRequestRecordRepository, userRepository : IUserInfoRepository)
+    init(questionRepository: IQuestionRepository, userRepository : IUserInfoRepository)
     {
         self.questionRepository = questionRepository
-        self.requestRecordRepository = requestRecordRepository
         self.userRepository = userRepository
     }
 
@@ -62,16 +59,6 @@ class RequestService
         }
     }
     
-    func GetRequestRecords() -> [RequestRecord]
-    {
-        return self.requestRecordRepository.GetAllRequestRecordsSortByFinishDate()
-    }
-    
-    func DeleteRequestRecord(input : RequestRecord) -> Bool
-    {
-        return self.requestRecordRepository.DeleteRequestRecord(input: input)
-    }
-    
     func ClearCurrentRequestContext()
     {
         self.requestContext = nil
@@ -80,11 +67,7 @@ class RequestService
     func SaveRequestRecord()
     {
         let requestContext = GetRequestContext()
-        let savRes = SaveRequestRecord(requestContext: requestContext)
-        if savRes
-        {
-            ClearCurrentRequestContext()
-        }
+        // todo 
     }
 
     fileprivate func GetRequest(user:UserInfo, count: Int, inputCategories:[String]) -> Request
@@ -102,12 +85,5 @@ class RequestService
         questions.shuffle()
         let request = Request(id: UUID(), userId: user.id.uuidString, createdDateTime: Date(), questions: questions)
         return request
-    }
-
-    fileprivate func SaveRequestRecord(requestContext:RequestContext) -> Bool
-    {
-        let requestRecord = requestContext.FinishRequest()
-        let saveRes = requestRecordRepository.SaveRequestRecord(input: requestRecord)
-        return saveRes
     }
 }

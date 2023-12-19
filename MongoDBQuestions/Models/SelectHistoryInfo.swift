@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SelectOptionInfo
+struct SelectHistoryInfo
 {
     let optionId:String
     let optionValue:String
