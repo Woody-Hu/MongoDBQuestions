@@ -24,7 +24,7 @@ struct QuestionDetailView: View {
             MultipleChoiceComponent(choices: ["option 1", "option 2", "option 3"])
             
             ConfirmButtonComponent()
-        }.preferredColorScheme(.light)
+        }
     }
 }
 

@@ -21,7 +21,7 @@ struct QuestionHistoryComponent: View {
             
             MultipleSelectOptionInfoComponent(selectHisotry:  self.questionHistoryInfo.selectHistory)
             
-        }.preferredColorScheme(.light)
+        }
     }
 }
 
