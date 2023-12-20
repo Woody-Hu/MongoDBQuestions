@@ -11,30 +11,14 @@ class RequestService
 {
     let questionRepository: IQuestionRepository
 
-    let userRepository : IUserInfoRepository
-
     var requestContext : RequestContext?
 
-    var user : UserInfo?
+    var user : UserInfo
 
-    init(questionRepository: IQuestionRepository, userRepository : IUserInfoRepository)
+    init(questionRepository: IQuestionRepository, user:UserInfo)
     {
         self.questionRepository = questionRepository
-        self.userRepository = userRepository
-    }
-
-    func GetUserInfo() -> UserInfo
-    {
-        if let user = self.user
-        {
-            return user
-        }
-        else
-        {
-            let user = userRepository.GetOrAddCurrentUserInfo()
-            self.user = user
-            return user
-        }
+        self.user = user
     }
 
     func GetRequestContext(count: Int = 20, inputCategories:[String] = []) -> RequestContext
@@ -51,7 +35,6 @@ class RequestService
         }
         else
         {
-            let user = GetUserInfo()
             let request = GetRequest(user: user, count: usedCount, inputCategories: inputCategories)
             let requestContext  = RequestContext(userInfo: user, currentRequest: request)
             self.requestContext = requestContext
@@ -83,7 +66,7 @@ class RequestService
         }
 
         questions.shuffle()
-        let request = Request(id: UUID(), userId: user.id.uuidString, createdDateTime: Date(), questions: questions)
+        let request = Request(id: UUID(), userId: user.id, createdDateTime: Date(), questions: questions)
         return request
     }
 }

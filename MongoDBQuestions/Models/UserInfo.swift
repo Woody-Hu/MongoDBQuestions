@@ -9,11 +9,11 @@ import Foundation
 
 struct UserInfo:Identifiable
 {
-    let id:UUID
+    let id:String
     let createdDateTime:Date
     let name:String
     
-    init(id: UUID, createdDateTime: Date, name:String) {
+    init(id: String, createdDateTime: Date, name:String) {
         self.id = id
         self.createdDateTime = createdDateTime
         self.name = name
