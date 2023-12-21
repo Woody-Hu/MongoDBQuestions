@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CategoryInfo{
+struct GroupInfo{
     let name:String
     let description:String
     let imageName:String

@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct QuestionListView: View {
-    var categories: [CategoryInfo] = [
-        CategoryInfo(name: "test1", description: "description for test1", imageName: ""),
-        CategoryInfo(name: "test2", description: "description for test2", imageName: ""),
-        CategoryInfo(name: "test3", description: "description for test3", imageName: "")
+    var groups: [GroupInfo] = [
+        GroupInfo(name: "test1", description: "description for test1", imageName: ""),
+        GroupInfo(name: "test2", description: "description for test2", imageName: ""),
+        GroupInfo(name: "test3", description: "description for test3", imageName: "")
     ]
     var body: some View {
         NavigationStack{
-            List(categories, id: \.name){ category in
+            List(groups, id: \.name){ groupInfo in
                 NavigationLink(destination: QuestionDetailView()){
-                    QuestionCategoryRow(categoryInfo: category)
+                    QuestionGroupRow(groupInfo: groupInfo)
                 }
             }
         }

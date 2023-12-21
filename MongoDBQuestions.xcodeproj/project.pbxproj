@@ -24,8 +24,8 @@
 		F050CD982B29A3A4008F92FE /* RequestHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F050CD972B29A3A4008F92FE /* RequestHistoryView.swift */; };
 		F0602B932B15B8290037690D /* QuestionSizeSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0602B922B15B8290037690D /* QuestionSizeSetting.swift */; };
 		F0602B952B15B8420037690D /* SettingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0602B942B15B8420037690D /* SettingInfo.swift */; };
-		F0602B972B15D0640037690D /* QuestionCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0602B962B15D0640037690D /* QuestionCategoryRow.swift */; };
-		F0602B992B15D1770037690D /* CategoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0602B982B15D1770037690D /* CategoryInfo.swift */; };
+		F0602B972B15D0640037690D /* QuestionGroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0602B962B15D0640037690D /* QuestionGroupRow.swift */; };
+		F0602B992B15D1770037690D /* GroupInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0602B982B15D1770037690D /* GroupInfo.swift */; };
 		F070F71D2B048E7D003E5017 /* RequestContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070F71C2B048E7D003E5017 /* RequestContext.swift */; };
 		F07A828C2B21A4960029A707 /* HistoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07A828B2B21A4960029A707 /* HistoryRow.swift */; };
 		F07DC4132AFA1930006DFD11 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07DC4122AFA1930006DFD11 /* Request.swift */; };
@@ -84,8 +84,8 @@
 		F050CD972B29A3A4008F92FE /* RequestHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHistoryView.swift; sourceTree = "<group>"; };
 		F0602B922B15B8290037690D /* QuestionSizeSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSizeSetting.swift; sourceTree = "<group>"; };
 		F0602B942B15B8420037690D /* SettingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingInfo.swift; sourceTree = "<group>"; };
-		F0602B962B15D0640037690D /* QuestionCategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCategoryRow.swift; sourceTree = "<group>"; };
-		F0602B982B15D1770037690D /* CategoryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInfo.swift; sourceTree = "<group>"; };
+		F0602B962B15D0640037690D /* QuestionGroupRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupRow.swift; sourceTree = "<group>"; };
+		F0602B982B15D1770037690D /* GroupInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInfo.swift; sourceTree = "<group>"; };
 		F070F71C2B048E7D003E5017 /* RequestContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestContext.swift; sourceTree = "<group>"; };
 		F07A828B2B21A4960029A707 /* HistoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRow.swift; sourceTree = "<group>"; };
 		F07DC4122AFA1930006DFD11 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
@@ -198,7 +198,7 @@
 		F084DD902B207DCA0030EDB3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F0602B982B15D1770037690D /* CategoryInfo.swift */,
+				F0602B982B15D1770037690D /* GroupInfo.swift */,
 				F0BB28BB2AF4B63B000732B8 /* ImageInfo.swift */,
 				F0C646B32AF3869200CF9695 /* Question.swift */,
 				F0C646B52AF387A500CF9695 /* QuestionOption.swift */,
@@ -218,7 +218,7 @@
 			children = (
 				F050CD932B2863FA008F92FE /* QuestionHistoryComponent.swift */,
 				F0602B922B15B8290037690D /* QuestionSizeSetting.swift */,
-				F0602B962B15D0640037690D /* QuestionCategoryRow.swift */,
+				F0602B962B15D0640037690D /* QuestionGroupRow.swift */,
 				F0A2C6B22B173B590010AB52 /* DescriptionComponent.swift */,
 				F0A2C6B42B1872E80010AB52 /* MultipleChoiceComponent.swift */,
 				F081DD662B1DB3780025ECC2 /* ConfirmButtonComponent.swift */,
@@ -376,7 +376,7 @@
 				F081DD692B1F0BCF0025ECC2 /* TitleComponent.swift in Sources */,
 				F0B5D2512B26E31E0049A075 /* SelectState.swift in Sources */,
 				F0F9C3372AFDFFFA00674082 /* IUserInfoRepository.swift in Sources */,
-				F0602B972B15D0640037690D /* QuestionCategoryRow.swift in Sources */,
+				F0602B972B15D0640037690D /* QuestionGroupRow.swift in Sources */,
 				F050CD982B29A3A4008F92FE /* RequestHistoryView.swift in Sources */,
 				F047DE782AF37CE600842C53 /* ContentView.swift in Sources */,
 				F081DD672B1DB3780025ECC2 /* ConfirmButtonComponent.swift in Sources */,
@@ -385,7 +385,7 @@
 				F050CD962B29A1A3008F92FE /* QuestionHistoryInfo.swift in Sources */,
 				F03468322B32B7A600AFE60D /* MemoryUserInfoRepository.swift in Sources */,
 				F07A828C2B21A4960029A707 /* HistoryRow.swift in Sources */,
-				F0602B992B15D1770037690D /* CategoryInfo.swift in Sources */,
+				F0602B992B15D1770037690D /* GroupInfo.swift in Sources */,
 				F0602B932B15B8290037690D /* QuestionSizeSetting.swift in Sources */,
 				F0C646B42AF3869200CF9695 /* Question.swift in Sources */,
 				F0F9C3352AFDFE6C00674082 /* IQuestionRepository.swift in Sources */,
