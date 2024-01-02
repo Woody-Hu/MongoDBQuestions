@@ -10,15 +10,15 @@ struct RequestHistoryInfo
 {
     let requestRecordId:String
     let requestDate:Date
-    let requestCategory:String
+    let inputGroup:String
     let score:Int
     let historyName:String
     let questionHistoryInfos: [QuestionHistoryInfo]
     
-    init(requestRecordId: String, requestDate: Date, requestCategory: String, score: Int, questionHistoryInfos : [QuestionHistoryInfo] ) {
+    init(requestRecordId: String, requestDate: Date, inputGroup: String, score: Int, questionHistoryInfos : [QuestionHistoryInfo] ) {
         self.requestRecordId = requestRecordId
         self.requestDate = requestDate
-        self.requestCategory = requestCategory
+        self.inputGroup = inputGroup
         self.score = score
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YY/MM/dd"

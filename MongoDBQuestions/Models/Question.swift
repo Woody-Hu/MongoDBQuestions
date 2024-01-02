@@ -17,7 +17,7 @@ struct Question : Identifiable, Codable
     let link: URL
     let extendedDescription: String
     let parentQuestionId:String
-    let categories:[String]
+    let groups:[String]
 
     init(id: UUID, questionDescription: String, options: [QuestionOption], correctOptionIds: Set<String>, images: [ImageInfo], link: URL, extendedDescription: String)
     {
@@ -30,7 +30,7 @@ struct Question : Identifiable, Codable
         self.link = link
         self.extendedDescription = extendedDescription
         self.parentQuestionId = ""
-        self.categories = []
+        self.groups = []
     }
     
     func isAnswer(_ input:[QuestionOption]) -> Bool

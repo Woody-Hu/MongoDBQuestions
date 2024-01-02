@@ -17,11 +17,11 @@ struct HistoryRow: View {
                 Text(historyInfo.score.formatted()).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             }
             
-            Text(historyInfo.requestCategory).font(.subheadline)
+            Text(historyInfo.inputGroup).font(.subheadline)
         }
     }
 }
 
 #Preview {
-    HistoryRow(historyInfo: RequestHistoryInfo(requestRecordId: "123", requestDate: Date(), requestCategory: "test", score: 100, questionHistoryInfos: []))
+    HistoryRow(historyInfo: RequestHistoryInfo(requestRecordId: "123", requestDate: Date(), inputGroup: "test", score: 100, questionHistoryInfos: []))
 }
