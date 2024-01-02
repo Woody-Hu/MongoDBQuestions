@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QuestionDetailView: View {
-    @State var question : Question  = Question(id: UUID(), questionDescription: "", options: [], correctOptionIds: [], images: [], link: URL(string: "https://www.mongodb.com")!, extendedDescription: "")
+    @State var question : Question  = Question(id: UUID(), questionDescription: "", title: "", options: [], correctOptionIds: [])
     @State var selectedOptions: [QuestionOption] = []
     
     var body: some View {

@@ -13,22 +13,16 @@ struct Question : Identifiable, Codable
     let questionDescription: String
     let options: [QuestionOption]
     let correctOptionIds: Set<String>
-    let images: [ImageInfo]
-    let link: URL
-    let extendedDescription: String
     let parentQuestionId:String
     let groups:[String]
 
-    init(id: UUID, questionDescription: String, options: [QuestionOption], correctOptionIds: Set<String>, images: [ImageInfo], link: URL, extendedDescription: String)
+    init(id: UUID, questionDescription: String, title:String = "", options: [QuestionOption], correctOptionIds: Set<String>, groups:[String] = ["All"], parentQuestionId: String = "")
     {
         self.id = id
         self.title = ""
         self.questionDescription = questionDescription
         self.options = options
         self.correctOptionIds = correctOptionIds
-        self.images = images
-        self.link = link
-        self.extendedDescription = extendedDescription
         self.parentQuestionId = ""
         self.groups = []
     }
@@ -55,13 +49,13 @@ extension Question{
     // get empty question
     static func getEmptyQuestion() -> Question
     {
-        return Question(id: UUID(), questionDescription: "", options: [], correctOptionIds: [], images: [], link: URL(string: "https://www.mongodb.com")!, extendedDescription: "")
+        return Question(id: UUID(),questionDescription:"", title: "" , options: [], correctOptionIds: [])
     }
 
     // get sample question
     static func getSampleQuestion() -> Question
     {
-        return Question(id: UUID(), questionDescription: "test quest", options: [QuestionOption(optionValue: "value", optionId: "id")], correctOptionIds: ["id"], images: [], link: URL(string: "https://www.mongodb.com")!, extendedDescription: "")
+        return Question(id: UUID(), questionDescription: "test quest", title: "", options: [QuestionOption(optionValue: "value", optionId: "id")], correctOptionIds: ["id"])
     }
 
     // to json

@@ -11,5 +11,5 @@ protocol IQuestionRepository
 {
     func GetAllQuestions(count: Int) -> [Question]
     
-    func GetlQeustionsByCategories (inputCategories:[String], count: Int) -> [Question]
+    func GetQeustionsByGroup (inputGroup:String, count: Int) -> [Question]
 }
