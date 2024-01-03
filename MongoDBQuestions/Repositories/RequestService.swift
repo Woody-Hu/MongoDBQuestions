@@ -21,7 +21,7 @@ class RequestService
         self.user = user
     }
 
-    func GetRequestContext(count: Int = 20, inputCategories:[String] = []) -> RequestContext
+    func GetRequestContext(count: Int = 20, inputGroup:String = "All") -> RequestContext
     {
         var usedCount = count
         if usedCount < 0
@@ -35,7 +35,7 @@ class RequestService
         }
         else
         {
-            let request = GetRequest(user: user, count: usedCount, inputCategories: inputCategories)
+            let request = GetRequest(user: user, count: usedCount, inputGroup: inputGroup)
             let requestContext  = RequestContext(userInfo: user, currentRequest: request)
             self.requestContext = requestContext
             return requestContext
@@ -53,17 +53,10 @@ class RequestService
         // todo 
     }
 
-    fileprivate func GetRequest(user:UserInfo, count: Int, inputCategories:[String]) -> Request
+    fileprivate func GetRequest(user:UserInfo, count: Int, inputGroup:String) -> Request
     {
         var questions: [Question] = []
-        if inputCategories.count == 0
-        {
-            questions =  questionRepository.GetAllQuestions(count: count)
-        }
-        else
-        {
-            questions = questionRepository.GetlQeustionsByCategories(inputCategories: inputCategories, count: count)
-        }
+        questions = questionRepository.GetQeustionsByGroup(inputGroup: inputGroup, count: count)
 
         questions.shuffle()
         let request = Request(id: UUID(), userId: user.id, createdDateTime: Date(), questions: questions)

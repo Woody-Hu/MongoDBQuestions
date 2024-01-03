@@ -46,18 +46,6 @@ struct Question : Identifiable, Codable
 }
 
 extension Question{
-    // get empty question
-    static func getEmptyQuestion() -> Question
-    {
-        return Question(id: UUID(),questionDescription:"", title: "" , options: [], correctOptionIds: [])
-    }
-
-    // get sample question
-    static func getSampleQuestion() -> Question
-    {
-        return Question(id: UUID(), questionDescription: "test quest", title: "", options: [QuestionOption(optionValue: "value", optionId: "id")], correctOptionIds: ["id"])
-    }
-
     // to json
     func toJson() -> String
     {

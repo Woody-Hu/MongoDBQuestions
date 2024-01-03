@@ -12,15 +12,13 @@ struct  QuestionOption : Identifiable, Codable, Hashable
     let optionValue : String
     let optionId: String
     let questionId: String
-    let baseOptionId: String
 
     // init method
-    init(optionValue: String, optionId: String)
+    init(optionValue: String, optionId: String, questionId:String)
     {
         self.id = UUID()
         self.optionValue = optionValue
         self.optionId = optionId
-        self.questionId = ""
-        self.baseOptionId = ""
+        self.questionId = questionId
     }
 }
