@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+class MemoryGroupInfoRepository:IGroupInfoRepository
+{
+    let groupInfos:[GroupInfo]
+    
+    init()
+    {
+        groupInfos = [
+            GroupInfo(name: "All", description: "get all questions", imageName: ""),
+            GroupInfo(name: "Test", description: "get test questions", imageName: ""),
+        ]
+    }
+    
+    func GetAllGroupInfos() -> [GroupInfo] {
+        return groupInfos
+    }
+}

@@ -6,3 +6,7 @@
 //
 
 import Foundation
+protocol IGroupInfoRepository
+{
+    func GetAllGroupInfos() -> [GroupInfo]
+}

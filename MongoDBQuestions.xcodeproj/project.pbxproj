@@ -34,6 +34,8 @@
 		F0A2C6B32B173B590010AB52 /* DescriptionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2C6B22B173B590010AB52 /* DescriptionComponent.swift */; };
 		F0A2C6B52B1872E80010AB52 /* MultipleChoiceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2C6B42B1872E80010AB52 /* MultipleChoiceComponent.swift */; };
 		F0AA24752B43E68B0033D262 /* MemoryQuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AA24742B43E68B0033D262 /* MemoryQuestionRepository.swift */; };
+		F0AA24772B46761E0033D262 /* IGroupInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AA24762B46761E0033D262 /* IGroupInfoRepository.swift */; };
+		F0AA24792B4677660033D262 /* MemoryGroupInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AA24782B4677660033D262 /* MemoryGroupInfoRepository.swift */; };
 		F0B5D24F2B26E0BF0049A075 /* SelectHistoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B5D24E2B26E0BF0049A075 /* SelectHistoryInfo.swift */; };
 		F0B5D2512B26E31E0049A075 /* SelectState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B5D2502B26E31E0049A075 /* SelectState.swift */; };
 		F0C646B42AF3869200CF9695 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C646B32AF3869200CF9695 /* Question.swift */; };
@@ -94,6 +96,8 @@
 		F0A2C6B22B173B590010AB52 /* DescriptionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionComponent.swift; sourceTree = "<group>"; };
 		F0A2C6B42B1872E80010AB52 /* MultipleChoiceComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceComponent.swift; sourceTree = "<group>"; };
 		F0AA24742B43E68B0033D262 /* MemoryQuestionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryQuestionRepository.swift; sourceTree = "<group>"; };
+		F0AA24762B46761E0033D262 /* IGroupInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGroupInfoRepository.swift; sourceTree = "<group>"; };
+		F0AA24782B4677660033D262 /* MemoryGroupInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGroupInfoRepository.swift; sourceTree = "<group>"; };
 		F0B5D24E2B26E0BF0049A075 /* SelectHistoryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHistoryInfo.swift; sourceTree = "<group>"; };
 		F0B5D2502B26E31E0049A075 /* SelectState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectState.swift; sourceTree = "<group>"; };
 		F0C646B32AF3869200CF9695 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -237,6 +241,8 @@
 				F070F71C2B048E7D003E5017 /* RequestContext.swift */,
 				F03468312B32B7A600AFE60D /* MemoryUserInfoRepository.swift */,
 				F0AA24742B43E68B0033D262 /* MemoryQuestionRepository.swift */,
+				F0AA24762B46761E0033D262 /* IGroupInfoRepository.swift */,
+				F0AA24782B4677660033D262 /* MemoryGroupInfoRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 			files = (
 				F0F795002B20635B00028608 /* RequestHistoryInfo.swift in Sources */,
 				F0602B952B15B8420037690D /* SettingInfo.swift in Sources */,
+				F0AA24772B46761E0033D262 /* IGroupInfoRepository.swift in Sources */,
 				F081DD692B1F0BCF0025ECC2 /* TitleComponent.swift in Sources */,
 				F0B5D2512B26E31E0049A075 /* SelectState.swift in Sources */,
 				F0F9C3372AFDFFFA00674082 /* IUserInfoRepository.swift in Sources */,
@@ -380,6 +387,7 @@
 				F050CD982B29A3A4008F92FE /* RequestHistoryView.swift in Sources */,
 				F047DE782AF37CE600842C53 /* ContentView.swift in Sources */,
 				F081DD672B1DB3780025ECC2 /* ConfirmButtonComponent.swift in Sources */,
+				F0AA24792B4677660033D262 /* MemoryGroupInfoRepository.swift in Sources */,
 				F0F794FC2B2061C300028608 /* SettingView.swift in Sources */,
 				F0AA24752B43E68B0033D262 /* MemoryQuestionRepository.swift in Sources */,
 				F0C646B62AF387A500CF9695 /* QuestionOption.swift in Sources */,
