@@ -8,11 +8,7 @@
 import SwiftUI
 
 struct QuestionListView: View {
-    var groups: [GroupInfo] = [
-        GroupInfo(name: "test1", description: "description for test1", imageName: ""),
-        GroupInfo(name: "test2", description: "description for test2", imageName: ""),
-        GroupInfo(name: "test3", description: "description for test3", imageName: "")
-    ]
+    var groups: [GroupInfo]
     var body: some View {
         NavigationStack{
             List(groups, id: \.name){ groupInfo in
@@ -25,5 +21,9 @@ struct QuestionListView: View {
 }
 
 #Preview {
-    QuestionListView()
+    QuestionListView(groups:[
+        GroupInfo(name: "test1", description: "description for test1", imageName: ""),
+        GroupInfo(name: "test2", description: "description for test2", imageName: ""),
+        GroupInfo(name: "test3", description: "description for test3", imageName: "")
+    ])
 }
