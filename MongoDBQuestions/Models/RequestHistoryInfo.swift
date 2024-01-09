@@ -6,8 +6,9 @@
 //
 
 import Foundation
-struct RequestHistoryInfo
+struct RequestHistoryInfo:Identifiable
 {
+    let id:UUID
     let requestRecordId:String
     let requestDate:Date
     let inputGroup:String
@@ -16,6 +17,7 @@ struct RequestHistoryInfo
     let questionHistoryInfos: [QuestionHistoryInfo]
     
     init(requestRecordId: String, requestDate: Date, inputGroup: String, score: Int, questionHistoryInfos : [QuestionHistoryInfo] ) {
+        self.id = UUID()
         self.requestRecordId = requestRecordId
         self.requestDate = requestDate
         self.inputGroup = inputGroup

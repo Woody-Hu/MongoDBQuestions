@@ -31,6 +31,8 @@
 		F07DC4132AFA1930006DFD11 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07DC4122AFA1930006DFD11 /* Request.swift */; };
 		F081DD672B1DB3780025ECC2 /* ConfirmButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081DD662B1DB3780025ECC2 /* ConfirmButtonComponent.swift */; };
 		F081DD692B1F0BCF0025ECC2 /* TitleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081DD682B1F0BCF0025ECC2 /* TitleComponent.swift */; };
+		F0840F392B4D1304000220AF /* IRequestHistoryInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0840F382B4D1304000220AF /* IRequestHistoryInfoRepository.swift */; };
+		F0840F3B2B4D1D06000220AF /* MemoryRequestHisotryInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0840F3A2B4D1D06000220AF /* MemoryRequestHisotryInfoRepository.swift */; };
 		F0A2C6B32B173B590010AB52 /* DescriptionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2C6B22B173B590010AB52 /* DescriptionComponent.swift */; };
 		F0A2C6B52B1872E80010AB52 /* MultipleChoiceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2C6B42B1872E80010AB52 /* MultipleChoiceComponent.swift */; };
 		F0AA24752B43E68B0033D262 /* MemoryQuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AA24742B43E68B0033D262 /* MemoryQuestionRepository.swift */; };
@@ -93,6 +95,8 @@
 		F07DC4122AFA1930006DFD11 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		F081DD662B1DB3780025ECC2 /* ConfirmButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButtonComponent.swift; sourceTree = "<group>"; };
 		F081DD682B1F0BCF0025ECC2 /* TitleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleComponent.swift; sourceTree = "<group>"; };
+		F0840F382B4D1304000220AF /* IRequestHistoryInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequestHistoryInfoRepository.swift; sourceTree = "<group>"; };
+		F0840F3A2B4D1D06000220AF /* MemoryRequestHisotryInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryRequestHisotryInfoRepository.swift; sourceTree = "<group>"; };
 		F0A2C6B22B173B590010AB52 /* DescriptionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionComponent.swift; sourceTree = "<group>"; };
 		F0A2C6B42B1872E80010AB52 /* MultipleChoiceComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceComponent.swift; sourceTree = "<group>"; };
 		F0AA24742B43E68B0033D262 /* MemoryQuestionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryQuestionRepository.swift; sourceTree = "<group>"; };
@@ -243,6 +247,8 @@
 				F0AA24742B43E68B0033D262 /* MemoryQuestionRepository.swift */,
 				F0AA24762B46761E0033D262 /* IGroupInfoRepository.swift */,
 				F0AA24782B4677660033D262 /* MemoryGroupInfoRepository.swift */,
+				F0840F382B4D1304000220AF /* IRequestHistoryInfoRepository.swift */,
+				F0840F3A2B4D1D06000220AF /* MemoryRequestHisotryInfoRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -380,8 +386,10 @@
 				F0F795002B20635B00028608 /* RequestHistoryInfo.swift in Sources */,
 				F0602B952B15B8420037690D /* SettingInfo.swift in Sources */,
 				F0AA24772B46761E0033D262 /* IGroupInfoRepository.swift in Sources */,
+				F0840F3B2B4D1D06000220AF /* MemoryRequestHisotryInfoRepository.swift in Sources */,
 				F081DD692B1F0BCF0025ECC2 /* TitleComponent.swift in Sources */,
 				F0B5D2512B26E31E0049A075 /* SelectState.swift in Sources */,
+				F0840F392B4D1304000220AF /* IRequestHistoryInfoRepository.swift in Sources */,
 				F0F9C3372AFDFFFA00674082 /* IUserInfoRepository.swift in Sources */,
 				F0602B972B15D0640037690D /* QuestionGroupRow.swift in Sources */,
 				F050CD982B29A3A4008F92FE /* RequestHistoryView.swift in Sources */,
