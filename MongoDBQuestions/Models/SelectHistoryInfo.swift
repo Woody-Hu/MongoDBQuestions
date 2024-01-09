@@ -20,4 +20,9 @@ struct SelectHistoryInfo
         self.questionId = questionId
         self.selectState = selectState
     }
+    
+    static func FromQuestionOption(questionOption:QuestionOption, selectState: SelectState) -> SelectHistoryInfo
+    {
+        return SelectHistoryInfo(optionId:questionOption.id.uuidString, optionValue: questionOption.optionValue, questionId:questionOption.optionValue, selectState:selectState);
+    }
 }
