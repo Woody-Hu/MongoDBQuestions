@@ -26,23 +26,6 @@ struct Question : Identifiable, Codable
         self.parentQuestionId = ""
         self.groups = []
     }
-    
-    func isAnswer(_ input:[QuestionOption]) -> Bool
-    {
-        var res = false;
-        input.forEach { item in
-            res = res && correctOptionIds.contains(item.optionId)
-        }
-        
-        return res;
-    }
-    
-    func shuffleOptions() -> [QuestionOption]
-    {
-        var res = Array(options)
-        res.shuffle();
-        return res;
-    }
 }
 
 extension Question{
