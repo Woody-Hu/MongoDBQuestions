@@ -13,10 +13,12 @@ struct Request:Identifiable
     let userId: String
     let createdDateTime : Date
     let questions: [Question]
-    init(id: UUID, userId: String, createdDateTime: Date, questions: [Question]) {
+    let group:String
+    init(id: UUID, userId: String, createdDateTime: Date, group:String, questions: [Question]) {
         self.id = id
         self.userId = userId
         self.createdDateTime = createdDateTime
         self.questions = questions
+        self.group = group
     }
 }

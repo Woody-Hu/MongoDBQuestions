@@ -23,5 +23,5 @@ struct HistoryRow: View {
 }
 
 #Preview {
-    HistoryRow(historyInfo: RequestHistoryInfo(requestRecordId: "123", requestDate: Date(), inputGroup: "test", score: 100, questionHistoryInfos: []))
+    HistoryRow(historyInfo: RequestHistoryInfo(requestId: "123", requestDate: Date(), inputGroup: "test", score: 100, questionHistoryInfos: []))
 }

@@ -59,7 +59,7 @@ class RequestService
         questions = questionRepository.GetQeustionsByGroup(inputGroup: inputGroup, count: count)
 
         questions.shuffle()
-        let request = Request(id: UUID(), userId: user.id, createdDateTime: Date(), questions: questions)
+        let request = Request(id: UUID(), userId: user.id, createdDateTime: Date(), group: inputGroup, questions: questions)
         return request
     }
 }
