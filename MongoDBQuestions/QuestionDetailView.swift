@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QuestionDetailView: View {
-    @State var question : Question  = Question(id: UUID(), questionDescription: "", title: "", options: [], correctOptionIds: [])
+    @State var question : Question
     @State var selectedOptions: [QuestionOption] = []
     
     var body: some View {
@@ -29,5 +29,5 @@ struct QuestionDetailView: View {
 }
 
 #Preview {
-    QuestionDetailView()
+    QuestionDetailView(question: MemoryQuestionRepository.getSampleQuestion())
 }

@@ -24,7 +24,7 @@ struct Question : Identifiable, Codable
         self.options = options
         self.correctOptionIds = correctOptionIds
         self.parentQuestionId = ""
-        self.groups = []
+        self.groups = groups
     }
 }
 

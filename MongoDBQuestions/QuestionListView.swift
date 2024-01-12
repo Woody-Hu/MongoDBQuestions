@@ -9,10 +9,11 @@ import SwiftUI
 
 struct QuestionListView: View {
     var groups: [GroupInfo]
+    var questionRepository:IQuestionRepository
     var body: some View {
         NavigationStack{
             List(groups, id: \.name){ groupInfo in
-                NavigationLink(destination: QuestionDetailView()){
+                NavigationLink(destination: QuestionDetailView(question: questionRepository.GetQeustionsByGroup(inputGroup: groupInfo.name, count: 20).first!)){
                     QuestionGroupRow(groupInfo: groupInfo)
                 }
             }
@@ -21,9 +22,5 @@ struct QuestionListView: View {
 }
 
 #Preview {
-    QuestionListView(groups:[
-        GroupInfo(name: "test1", description: "description for test1", imageName: ""),
-        GroupInfo(name: "test2", description: "description for test2", imageName: ""),
-        GroupInfo(name: "test3", description: "description for test3", imageName: "")
-    ])
+    QuestionListView(groups:MemoryGroupInfoRepository().GetAllGroupInfos(), questionRepository: MemoryQuestionRepository())
 }

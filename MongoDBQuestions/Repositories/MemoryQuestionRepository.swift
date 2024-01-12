@@ -61,7 +61,9 @@ class MemoryQuestionRepository:IQuestionRepository
     }
     
     func GetQeustionsByGroup(inputGroup: String, count: Int) -> [Question] {
-        return Array(questions.filter{question in question.groups.contains(inputGroup)}.shuffled()[0..<count])
+        return Array(questions.filter{ $0.groups.contains { name in
+            name == inputGroup
+        }}.shuffled().prefix(count))
     }
     
     // get empty question
@@ -73,7 +75,6 @@ class MemoryQuestionRepository:IQuestionRepository
     // get sample question
     static func getSampleQuestion() -> Question
     {
-        let id = UUID()
-        return Question(id: id, questionDescription: "test quest", title: "", options: [QuestionOption(optionValue: "value", optionId: "id", questionId: id.uuidString)], correctOptionIds: ["id"])
+        return  Question(id: UUID(uuidString: "a820adf8-4c79-4f9e-ba6d-74363d1f8f62")!, questionDescription: "test question 40", title: "test 40", options: [QuestionOption(optionValue: "test right 1", optionId: "1", questionId: "a820adf8-4c79-4f9e-ba6d-74363d1f8f62"), QuestionOption(optionValue: "test fail", optionId: "2", questionId: "a820adf8-4c79-4f9e-ba6d-74363d1f8f62"), QuestionOption(optionValue: "test right 2", optionId: "3", questionId: "a820adf8-4c79-4f9e-ba6d-74363d1f8f62")], correctOptionIds: ["1", "3"], groups: ["All", "Test"])
     }
 }
