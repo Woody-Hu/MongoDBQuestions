@@ -29,8 +29,8 @@ struct QuestionHistoryInfo
         for option in question.options
         {
             var selectState = SelectState.normal
-            var isAnswer = question.correctOptionIds.contains(option.optionId)
-            var select = selectOptions.contains(where: { (selectOption) -> Bool in
+            let isAnswer = question.correctOptionIds.contains(option.optionId)
+            let select = selectOptions.contains(where: { (selectOption) -> Bool in
                 selectOption.optionId == option.optionId
             })
 

@@ -32,7 +32,7 @@ struct RequestHistoryInfo:Identifiable
     {
         var questionHistoryInfos = Array<QuestionHistoryInfo>()
         var i = 1
-        var total = request.questions.count
+        let total = request.questions.count
         var rightCount = 0
         for question in request.questions {
             var currentSelect = Array<QuestionOption>()
