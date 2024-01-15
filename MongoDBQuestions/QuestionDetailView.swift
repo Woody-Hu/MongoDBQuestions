@@ -10,10 +10,12 @@ import SwiftUI
 struct QuestionDetailView: View {
     @State var question : Question
     @State var selectedOptions: [QuestionOption] = []
+    @State var currentIndex:Int
+    let totalCount:Int
     
     var body: some View {
         VStack{
-            TitleComponent()
+            TitleComponent(current: $currentIndex, total: totalCount)
         
             Divider().frame(height:2).background(Color.gray)
             
@@ -29,5 +31,5 @@ struct QuestionDetailView: View {
 }
 
 #Preview {
-    QuestionDetailView(question: MemoryQuestionRepository.getSampleQuestion())
+    QuestionDetailView(question: MemoryQuestionRepository.getSampleQuestion(), currentIndex:1, totalCount: 10)
 }

@@ -9,9 +9,11 @@ import SwiftUI
 
 struct QuestionHistoryComponent: View {
     let questionHistoryInfo : QuestionHistoryInfo
+    
+    
     var body: some View {
         VStack{
-            TitleComponent(current: self.questionHistoryInfo.currentIndex, total: self.questionHistoryInfo.total)
+            TitleComponent(current: Binding<Int>.constant( self.questionHistoryInfo.currentIndex), total: self.questionHistoryInfo.total)
         
             Divider().frame(height:2).background(Color.gray)
             

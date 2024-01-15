@@ -8,20 +8,8 @@
 import SwiftUI
 
 struct TitleComponent: View {
-    let current:Int
+    @Binding var current:Int
     let total:Int
-    
-    init()
-    {
-        self.current = 0
-        self.total = 10
-    }
-    
-    init(current:Int, total:Int)
-    {
-        self.current = current
-        self.total = total
-    }
     
     var body: some View {
         Text(String(current) + " / "  + String(total)).font(.largeTitle)
@@ -29,5 +17,5 @@ struct TitleComponent: View {
 }
 
 #Preview {
-    TitleComponent()
+    TitleComponent(current: Binding<Int>.constant(1), total: 20)
 }
