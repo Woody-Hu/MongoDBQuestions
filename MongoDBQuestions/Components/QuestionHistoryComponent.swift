@@ -17,7 +17,7 @@ struct QuestionHistoryComponent: View {
         
             Divider().frame(height:2).background(Color.gray)
             
-            DescriptionComponent(description: self.questionHistoryInfo.questionDescrption).padding()
+            DescriptionComponent(description: Binding<String>.constant(self.questionHistoryInfo.questionDescrption),fontSize:  Binding<Double>.constant(20.0) ).padding()
             
             Divider().frame(height:2).background(Color.gray)
             

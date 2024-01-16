@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct DescriptionComponent: View {
-    let description:String
-    let fontSize = 20.0
+    @Binding var description:String
+    @Binding var fontSize:Double
     var body: some View {
         ScrollView
         {
@@ -21,5 +21,5 @@ struct DescriptionComponent: View {
 }
 
 #Preview {
-    DescriptionComponent(description: "Amongst which of the following is / are true about MongoDB?")
+    DescriptionComponent(description: Binding.constant("Amongst which of the following is / are true about MongoDB?"), fontSize: Binding.constant(20.0) )
 }

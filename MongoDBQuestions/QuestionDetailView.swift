@@ -19,7 +19,7 @@ struct QuestionDetailView: View {
         
             Divider().frame(height:2).background(Color.gray)
             
-            DescriptionComponent(description: "Amongst which of the following is / are true about MongoDB?").padding()
+            DescriptionComponent(description: $question.questionDescription, fontSize:Binding<Double>.constant(20.0)).padding()
             
             Divider().frame(height:2).background(Color.gray)
             

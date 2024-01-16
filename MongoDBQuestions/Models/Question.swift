@@ -10,7 +10,7 @@ struct Question : Identifiable, Codable
 {
     let id:UUID
     let title:String
-    let questionDescription: String
+    var questionDescription: String
     let options: [QuestionOption]
     let correctOptionIds: Set<String>
     let parentQuestionId:String
