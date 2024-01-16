@@ -26,7 +26,7 @@ struct QuestionDetailView: View {
             
             MultipleChoiceComponent(choices: ["option 1", "option 2", "option 3"], selectedOptions: $selectOptionIds)
             
-            ConfirmButtonComponent(selectOptions: $selectOptionIds, context: context)
+            ConfirmButtonComponent(selectOptions: $selectOptionIds, currentIndex: $context.currentIndex)
         }
     }
 }
