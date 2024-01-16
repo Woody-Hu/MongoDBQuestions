@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ConfirmButtonComponent: View {
     @Binding var selectOptions:[String]
+    var context:QuestionDetailContext
     var body: some View {
         Button(action: {
             print(selectOptions)
+            context.currentIndex = 2
         }){
             ZStack {
                 Circle()
@@ -33,5 +35,5 @@ struct ConfirmButtonComponent: View {
 }
 
 #Preview {
-    ConfirmButtonComponent(selectOptions: Binding<[String]>.constant([]))
+    ConfirmButtonComponent(selectOptions: Binding<[String]>.constant([]), context: QuestionDetailContext(currentIndex: 1))
 }

@@ -11,11 +11,12 @@ struct QuestionDetailView: View {
     @State var question : Question
     @State var currentIndex:Int
     @State var selectOptionIds:[String] = []
+    @ObservedObject var context:QuestionDetailContext = QuestionDetailContext(currentIndex: 1)
     let totalCount:Int
     
     var body: some View {
         VStack{
-            TitleComponent(current: $currentIndex, total: totalCount)
+            TitleComponent(current: $context.currentIndex, total: totalCount)
         
             Divider().frame(height:2).background(Color.gray)
             
@@ -25,7 +26,7 @@ struct QuestionDetailView: View {
             
             MultipleChoiceComponent(choices: ["option 1", "option 2", "option 3"], selectedOptions: $selectOptionIds)
             
-            ConfirmButtonComponent(selectOptions: $selectOptionIds)
+            ConfirmButtonComponent(selectOptions: $selectOptionIds, context: context)
         }
     }
 }

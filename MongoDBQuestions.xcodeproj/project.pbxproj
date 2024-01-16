@@ -43,6 +43,7 @@
 		F0B5D2512B26E31E0049A075 /* SelectState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B5D2502B26E31E0049A075 /* SelectState.swift */; };
 		F0C646B42AF3869200CF9695 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C646B32AF3869200CF9695 /* Question.swift */; };
 		F0C646B62AF387A500CF9695 /* QuestionOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C646B52AF387A500CF9695 /* QuestionOption.swift */; };
+		F0E75B992B5685D60016B795 /* QuestionDetailContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E75B982B5685D60016B795 /* QuestionDetailContext.swift */; };
 		F0F794FC2B2061C300028608 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F794FB2B2061C300028608 /* SettingView.swift */; };
 		F0F794FE2B2061D600028608 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F794FD2B2061D600028608 /* HistoryView.swift */; };
 		F0F795002B20635B00028608 /* RequestHistoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F794FF2B20635B00028608 /* RequestHistoryInfo.swift */; };
@@ -108,6 +109,7 @@
 		F0B5D2502B26E31E0049A075 /* SelectState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectState.swift; sourceTree = "<group>"; };
 		F0C646B32AF3869200CF9695 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F0C646B52AF387A500CF9695 /* QuestionOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOption.swift; sourceTree = "<group>"; };
+		F0E75B982B5685D60016B795 /* QuestionDetailContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailContext.swift; sourceTree = "<group>"; };
 		F0F794FB2B2061C300028608 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		F0F794FD2B2061D600028608 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		F0F794FF2B20635B00028608 /* RequestHistoryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHistoryInfo.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				F0B5D24E2B26E0BF0049A075 /* SelectHistoryInfo.swift */,
 				F0B5D2502B26E31E0049A075 /* SelectState.swift */,
 				F050CD952B29A1A3008F92FE /* QuestionHistoryInfo.swift */,
+				F0E75B982B5685D60016B795 /* QuestionDetailContext.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				F0F9C3372AFDFFFA00674082 /* IUserInfoRepository.swift in Sources */,
 				F0602B972B15D0640037690D /* QuestionGroupRow.swift in Sources */,
 				F050CD982B29A3A4008F92FE /* RequestHistoryView.swift in Sources */,
+				F0E75B992B5685D60016B795 /* QuestionDetailContext.swift in Sources */,
 				F047DE782AF37CE600842C53 /* ContentView.swift in Sources */,
 				F081DD672B1DB3780025ECC2 /* ConfirmButtonComponent.swift in Sources */,
 				F0AA24792B4677660033D262 /* MemoryGroupInfoRepository.swift in Sources */,
