@@ -9,8 +9,8 @@ import SwiftUI
 
 struct QuestionDetailView: View {
     @State var question : Question
-    @State var selectedOptions: [QuestionOption] = []
     @State var currentIndex:Int
+    @State var selectOptionIds:[String] = []
     let totalCount:Int
     
     var body: some View {
@@ -23,9 +23,9 @@ struct QuestionDetailView: View {
             
             Divider().frame(height:2).background(Color.gray)
             
-            MultipleChoiceComponent(choices: ["option 1", "option 2", "option 3"])
+            MultipleChoiceComponent(choices: ["option 1", "option 2", "option 3"], selectedOptions: $selectOptionIds)
             
-            ConfirmButtonComponent()
+            ConfirmButtonComponent(selectOptions: $selectOptionIds)
         }
     }
 }

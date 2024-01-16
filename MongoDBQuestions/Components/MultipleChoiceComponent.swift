@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MultipleChoiceComponent: View {
     var choices:[String]
-    @State var selectedOptions: [String] = []
+    @Binding var selectedOptions: [String]
     var body: some View {
         VStack(alignment:.leading)
         {
@@ -37,5 +37,5 @@ struct MultipleChoiceComponent: View {
 }
 
 #Preview {
-    MultipleChoiceComponent(choices: ["option 1", " option 2", "option 3"])
+    MultipleChoiceComponent(choices: ["option 1", "option 2", "option 3"], selectedOptions: Binding<[String]>.constant([]))
 }
