@@ -18,11 +18,11 @@ class QuestionDetailContext:ObservableObject
         return questions[currentIndex]
     }
     
-    let totalCount:Int = 10
+    let totalCount:Int
     
-    let questions:[Question] = []
+    let questions:[Question]
     
-    var selectOptionIds:[String] = []
+    @Published var selectOptionIds:[String] = []
     
     var questionHistoryInfos: [QuestionHistoryInfo] = []
 
@@ -30,9 +30,13 @@ class QuestionDetailContext:ObservableObject
         return currentIndex  < totalCount
     }
     
-    init(currentIndex: Int) {
-        self.currentIndex = currentIndex
-    }   
+    init(questions:[Question]) {
+        self.questions = questions
+        self.currentIndex = 0
+        self.totalCount = questions.count
+        self.currentQuestionDesription = currentQuestion.questionDescription
+        self.currentQuestionOptions = currentQuestion.options
+    }
 
     func completeCurrent()
     {
@@ -51,7 +55,7 @@ class QuestionDetailContext:ObservableObject
             currentIndex += 1
             currentQuestionDesription = currentQuestion.questionDescription
             currentQuestionOptions = currentQuestion.options
-            selectOptionIds = []
+            selectOptionIds.removeAll()
         }
     }
 }

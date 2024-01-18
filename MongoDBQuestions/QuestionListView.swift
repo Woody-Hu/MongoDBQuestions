@@ -14,7 +14,7 @@ struct QuestionListView: View {
         NavigationStack{
             List(groups, id: \.name){ groupInfo in
                 NavigationLink(destination:
-                                QuestionDetailView(question: questionRepository.GetQeustionsByGroup(inputGroup: groupInfo.name, count: 20).first!, currentIndex: 1, totalCount: 20)){
+                                QuestionDetailView(context: QuestionDetailContext(questions: questionRepository.GetQeustionsByGroup(inputGroup: groupInfo.name, count: 20)))){
                     QuestionGroupRow(groupInfo: groupInfo)
                 }
             }

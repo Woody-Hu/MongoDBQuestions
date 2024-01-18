@@ -12,10 +12,10 @@ struct TitleComponent: View {
     let total:Int
     
     var body: some View {
-        Text(String(current) + " / "  + String(total)).font(.largeTitle)
+        Text(String(current + 1) + " / "  + String(total)).font(.largeTitle)
     }
 }
 
 #Preview {
-    TitleComponent(current: Binding<Int>.constant(1), total: 20)
+    TitleComponent(current: Binding<Int>.constant(0), total: 20)
 }

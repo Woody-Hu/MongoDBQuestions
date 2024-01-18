@@ -8,29 +8,25 @@
 import SwiftUI
 
 struct QuestionDetailView: View {
-    @State var question : Question
-    @State var currentIndex:Int
-    @State var selectOptionIds:[String] = []
-    @ObservedObject var context:QuestionDetailContext = QuestionDetailContext(currentIndex: 1)
-    let totalCount:Int
+    @ObservedObject var context:QuestionDetailContext
     
     var body: some View {
         VStack{
-            TitleComponent(current: $context.currentIndex, total: totalCount)
+            TitleComponent(current: $context.currentIndex, total: context.totalCount)
         
             Divider().frame(height:2).background(Color.gray)
             
-            DescriptionComponent(description: $question.questionDescription, fontSize:Binding<Double>.constant(20.0)).padding()
+            DescriptionComponent(description: $context.currentQuestionDesription, fontSize:Binding<Double>.constant(20.0)).padding()
             
             Divider().frame(height:2).background(Color.gray)
             
-            MultipleChoiceComponent(choices: ["option 1", "option 2", "option 3"], selectedOptions: $selectOptionIds)
+            MultipleChoiceComponent(choices: ["option 1", "option 2", "option 3"], selectedOptions: $context.selectOptionIds)
             
-            ConfirmButtonComponent(selectOptions: $selectOptionIds, currentIndex: $context.currentIndex)
+            ConfirmButtonComponent(selectOptions: $context.selectOptionIds, currentIndex: $context.currentIndex)
         }
     }
 }
 
 #Preview {
-    QuestionDetailView(question: MemoryQuestionRepository.getSampleQuestion(), currentIndex:1, totalCount: 10)
+    QuestionDetailView(context: QuestionDetailContext(questions: [MemoryQuestionRepository.getSampleQuestion()]))
 }
